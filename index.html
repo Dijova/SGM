@@ -1,67 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4J5HHDTBMS"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-4J5HHDTBMS');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Cleaning Services in Massachusetts | SGM Clean Solutions</title>
-    <meta name="description" content="Best professional cleaning services in Lowell and Massachusetts. Residential & commercial cleaning. Free quotes!">
+    <!--
+        Content Security Policy: only allows scripts/connections from this site,
+        the quote-form backend (Google Apps Script), Google Analytics, the Tawk.to
+        chat widget and the optional Cloudflare Turnstile anti-bot check.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://www.googletagmanager.com https://*.tawk.to https://cdn.jsdelivr.net https://challenges.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com;
+        font-src 'self' https://*.tawk.to https://fonts.gstatic.com;
+        img-src 'self' data: https://*.googleusercontent.com https://www.googletagmanager.com https://*.google-analytics.com https://*.tawk.to https://cdn.jsdelivr.net https://tawk.link https://s3.amazonaws.com;
+        media-src 'self' https://*.tawk.to;
+        connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.tawk.to wss://*.tawk.to;
+        frame-src https://*.tawk.to https://challenges.cloudflare.com;
+        form-action 'self';
+        base-uri 'self';
+        object-src 'none';
+        upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Primary SEO -->
+    <title data-i18n="meta.title">Cleaning Services in Lowell, MA &amp; Massachusetts | SGM Clean Solutions</title>
+    <meta name="description" content="SGM Clean Solutions offers professional residential, commercial, office and floor cleaning, stripping &amp; waxing and snow removal in Lowell and across Massachusetts. Request a free quote today." data-i18n-content="meta.description">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="SGM Clean Solutions">
+    <meta name="theme-color" content="#343434">
+    <link rel="canonical" href="https://www.sgmcleansolutions.com/">
+    <link rel="alternate" hreflang="en" href="https://www.sgmcleansolutions.com/">
+    <link rel="alternate" hreflang="es" href="https://www.sgmcleansolutions.com/?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://www.sgmcleansolutions.com/">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SGM Clean Solutions">
+    <meta property="og:title" content="Cleaning Services in Lowell, MA &amp; Massachusetts | SGM Clean Solutions" data-i18n-content="meta.title">
+    <meta property="og:description" content="Professional residential, commercial and floor cleaning in Lowell and across Massachusetts. Request a free quote today." data-i18n-content="meta.ogDescription">
+    <meta property="og:url" content="https://www.sgmcleansolutions.com/">
+    <meta property="og:image" content="https://www.sgmcleansolutions.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SGM Clean Solutions professional office cleaning">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cleaning Services in Lowell, MA &amp; Massachusetts | SGM Clean Solutions">
+    <meta name="twitter:description" content="Professional residential, commercial and floor cleaning in Lowell and across Massachusetts. Request a free quote today.">
+    <meta name="twitter:image" content="https://www.sgmcleansolutions.com/assets/og-image.jpg">
+
+    <!-- Icons -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_16x16.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Structured data for Google (local business) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.sgmcleansolutions.com/#business",
+        "name": "SGM Clean Solutions",
+        "description": "Professional residential, commercial, office and floor cleaning, floor stripping and waxing, and snow removal services in Lowell and across Massachusetts.",
+        "url": "https://www.sgmcleansolutions.com/",
+        "logo": "https://www.sgmcleansolutions.com/assets/icon-512.png",
+        "image": "https://www.sgmcleansolutions.com/assets/og-image.jpg",
+        "telephone": "+1-954-245-1566",
+        "email": "info@sgmcleansolutions.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "86 Agawam St",
+            "addressLocality": "Lowell",
+            "addressRegion": "MA",
+            "postalCode": "01852",
+            "addressCountry": "US"
+        },
+        "areaServed": [
+            { "@type": "City", "name": "Lowell, MA" },
+            { "@type": "City", "name": "Boston, MA" },
+            { "@type": "City", "name": "Cambridge, MA" },
+            { "@type": "City", "name": "Worcester, MA" },
+            { "@type": "City", "name": "Springfield, MA" },
+            { "@type": "State", "name": "Massachusetts" }
+        ],
+        "knowsLanguage": ["en", "es"],
+        "hasMap": "https://maps.app.goo.gl/XUufZ51goBra3DHv9",
+        "sameAs": [
+            "https://www.facebook.com/SGMCleaningSolutions",
+            "https://www.instagram.com/sgm.cleansolutions/"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cleaning services",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Office Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floor Stripping, Waxing and Carpet Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apartment and Condominium Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential House Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Snow Removal" } }
+            ]
+        }
+    }
+    </script>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/hero-poster.jpg" as="image">
+    <script src="analytics.js" defer></script>
+    <script src="config.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/6841f7fc98d2da1914a1a63e/1it0r1d94';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <script src="reviews.js" defer></script>
+    <script src="tawk.js" defer></script>
 </head>
 
-
 <body class="dark-theme">
+    <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="assets/logo.png" alt="SGM Cleaning Services Logo">
-            </div>
-            
-            <nav>
-                <button class="menu-toggle" id="menu-toggle">
+            <a href="#home" class="brand" aria-label="SGM Clean Solutions - Home">
+                <img src="assets/sgm-clean-solutions-logo.png" alt="SGM Clean Solutions logo" width="75" height="56">
+                <span class="brand-name">SGM <span>Clean Solutions</span></span>
+            </a>
+
+            <nav aria-label="Main">
+                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false" data-i18n-aria-label="common.menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
                 <ul id="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#about-us">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#ofertas">Ofertas</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#cotizacion">Cotización</a></li>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#offers" data-i18n="nav.offers">Offers</a></li>
+                    <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                    <li><a href="cleaning-services-massachusetts/" data-i18n="nav.tips" data-lang-link>Cleaning Tips</a></li>
+                    <li><a href="#quote" class="nav-cta" data-i18n="nav.quote">Free Quote</a></li>
                     <li class="language-item">
+                        <label for="language-selector" class="visually-hidden" data-i18n="common.language">Language</label>
                         <select id="language-selector">
-                            <option value="en">English</option>
-                            <option value="es" selected>Español</option>  
+                            <option value="en" selected>English</option>
+                            <option value="es">Español</option>
                         </select>
                     </li>
                 </ul>
@@ -69,117 +154,121 @@
         </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <video autoplay muted loop playsinline class="hero-video">
+    <main id="main">
+        <section id="home" class="hero">
+            <video autoplay muted loop playsinline preload="metadata" class="hero-video" poster="assets/hero-poster.jpg" aria-hidden="true">
                 <source src="assets/banner.mp4" type="video/mp4">
-                Tu navegador no soporta el video HTML5.
             </video>
             <div class="container hero-overlay">
-                <h1>Experts in Floor Maintenance and Cleaning in Massachusetts</h1>
-                <p>Professional solutions for all types of surfaces in Massachusetts</p>
-                <a href="/cleaning-services-massachusetts" class="cta-button">Free Cleaning Tips</a>
+                <h1 data-i18n="hero.title">Professional Cleaning &amp; Floor Care Services in Lowell and Massachusetts</h1>
+                <p data-i18n="hero.subtitle">Residential, commercial and office cleaning, floor stripping &amp; waxing and snow removal — done right, on schedule.</p>
+                <div class="hero-actions">
+                    <a href="#quote" class="cta-button" data-i18n="hero.cta">Get a Free Quote</a>
+                    <a href="cleaning-services-massachusetts/" class="cta-button cta-secondary" data-i18n="hero.tips" data-lang-link>Free Cleaning Tips</a>
+                </div>
             </div>
         </section>
 
-        <section id="about-us" class="about-section">
+        <section id="about" class="about-section">
             <div class="container">
-                <h2>About Us</h2>
+                <h2 data-i18n="about.title">About SGM Clean Solutions</h2>
                 <div class="about-grid">
                     <div class="about-text">
-                        <p>At <strong>SGM Clean Solutions</strong> we are dedicated to offering high-quality cleaning and maintenance solutions for both residential and commercial spaces. Our commitment is excellence and sustainability.</p>
-                        <p>We use <strong>cutting-edge technology</strong> and certified products that ensure impeccable results and a healthier environment for our clients.</p>
+                        <p data-i18n-html="about.p1">At <strong>SGM Clean Solutions</strong> we provide high-quality cleaning and maintenance for homes and businesses in Lowell and throughout Massachusetts. Our commitment is excellence and sustainability.</p>
+                        <p data-i18n-html="about.p2">We use <strong>professional equipment</strong> and certified, eco-friendly products that deliver impeccable results and a healthier environment for our clients.</p>
                         <ul>
-                            <li>✅ Professional and trained team</li>
-                            <li>✅ Personalized services</li>
-                            <li>✅ Ecological commitment</li>
+                            <li data-i18n="about.item1">✅ Professional and trained team</li>
+                            <li data-i18n="about.item2">✅ Personalized cleaning plans</li>
+                            <li data-i18n="about.item3">✅ Eco-friendly products</li>
+                            <li data-i18n="about.item4">✅ Bilingual service: English &amp; Spanish</li>
                         </ul>
                     </div>
                     <div class="about-image">
-                        <img src="assets/aboutUs.jpg" alt="Nuestro equipo profesional de limpieza">
+                        <img src="assets/sgm-clean-solutions-team.jpg" alt="SGM Clean Solutions professional cleaning team in Massachusetts" data-i18n-alt="about.imageAlt" width="800" height="800" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="servicios">
+        <section id="services">
             <div class="container">
-                <h2>Our Services in Massachusetts</h2>
+                <h2 data-i18n="services.title">Our Cleaning Services in Massachusetts</h2>
+                <p class="section-intro" data-i18n="services.intro">From daily office cleaning to floor restoration and winter snow removal, we serve Lowell, Boston, Cambridge, Worcester, Springfield and surrounding Massachusetts communities.</p>
                 <div class="service-grid">
-                    <div class="service-item">
-                        <img src="assets/Office C.jpg" alt="Limpieza de Oficinas">
-                        <h3>Office Cleaning Service Massachusetts</h3>
+                    <article class="service-item">
+                        <img src="assets/office-cleaning-massachusetts.jpg" alt="Office cleaning service in Massachusetts" data-i18n-alt="services.office.alt" width="900" height="600" loading="lazy" decoding="async">
+                        <h3 data-i18n="services.office.title">Office Cleaning</h3>
                         <ul>
-                            <li><a>🫧 Daily Cleaning</a></li>
-                            <li><a>🫧 Deep Disinfection</a></li>
-                            <li><a>🫧 Customized Solutions</a></li>
+                            <li data-i18n="services.office.i1">🫧 Daily and weekly cleaning</li>
+                            <li data-i18n="services.office.i2">🫧 Deep disinfection</li>
+                            <li data-i18n="services.office.i3">🫧 Customized cleaning plans</li>
                         </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="assets/floorma.jpg" alt="Limpieza Especializada de Pisos">
-                        <h3>Specialized Floor Cleaning Massachusetts</h3>
+                    </article>
+                    <article class="service-item">
+                        <img src="assets/floor-stripping-waxing-massachusetts.jpg" alt="Floor stripping and waxing in Massachusetts" data-i18n-alt="services.floors.alt" width="900" height="601" loading="lazy" decoding="async">
+                        <h3 data-i18n="services.floors.title">Specialized Floor Care</h3>
                         <ul>
-                            <li><a>🫧 Stripping and Waxing</a></li>
-                            <li><a>🫧 Deep Carpet Cleaning</a></li>
-                            <li><a>🫧 Surface Care and Maintenance</a></li>
+                            <li data-i18n="services.floors.i1">🫧 Floor stripping and waxing</li>
+                            <li data-i18n="services.floors.i2">🫧 Deep carpet cleaning</li>
+                            <li data-i18n="services.floors.i3">🫧 Surface care and maintenance</li>
                         </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="assets/condominium.jpg" alt="Soluciones para Apartamentos y Condominios">
-                        <h3>Apartment and Condominium Solutions</h3>
+                    </article>
+                    <article class="service-item">
+                        <img src="assets/apartment-condominium-cleaning.jpg" alt="Apartment and condominium cleaning" data-i18n-alt="services.condos.alt" width="800" height="533" loading="lazy" decoding="async">
+                        <h3 data-i18n="services.condos.title">Apartments &amp; Condominiums</h3>
                         <ul>
-                            <li><a>🫧 Apartment Cleaning</a></li>
-                            <li><a>🫧 Common Areas Maintenance</a></li>
-                            <li><a>🫧 Recreational Areas Maintenance</a></li>
+                            <li data-i18n="services.condos.i1">🫧 Apartment cleaning</li>
+                            <li data-i18n="services.condos.i2">🫧 Common area maintenance</li>
+                            <li data-i18n="services.condos.i3">🫧 Recreational area maintenance</li>
                         </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="assets/Residencial.jpg" alt="Limpieza Residencial">
-                        <h3>Residential Cleaning Lowell Massachusetts</h3>
+                    </article>
+                    <article class="service-item">
+                        <img src="assets/residential-house-cleaning-lowell-ma.jpg" alt="Residential house cleaning in Lowell, MA" data-i18n-alt="services.residential.alt" width="900" height="708" loading="lazy" decoding="async">
+                        <h3 data-i18n="services.residential.title">Residential Cleaning in Lowell, MA</h3>
                         <ul>
-                            <li><a>🫧 Regular Cleaning</a></li>
-                            <li><a>🫧 Deep Cleaning</a></li>
-                            <li><a>🫧 Post-Construction or Post-Move Cleaning</a></li>
+                            <li data-i18n="services.residential.i1">🫧 Regular house cleaning</li>
+                            <li data-i18n="services.residential.i2">🫧 Deep cleaning</li>
+                            <li data-i18n="services.residential.i3">🫧 Post-construction and move-in/move-out cleaning</li>
                         </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="assets/comercial.jpg" alt="Limpieza Comercial">
-                        <h3>Commercial Cleaning Massachusetts</h3>
+                    </article>
+                    <article class="service-item">
+                        <img src="assets/commercial-cleaning-massachusetts.jpg" alt="Commercial cleaning in Massachusetts" data-i18n-alt="services.commercial.alt" width="900" height="600" loading="lazy" decoding="async">
+                        <h3 data-i18n="services.commercial.title">Commercial Cleaning</h3>
                         <ul>
-                            <li><a>🫧 Office Cleaning</a></li>
-                            <li><a>🫧 Industrial Cleaning</a></li>
-                            <li><a>🫧 Commercial Space Maintenance</a></li>
+                            <li data-i18n="services.commercial.i1">🫧 Retail and office buildings</li>
+                            <li data-i18n="services.commercial.i2">🫧 Industrial cleaning</li>
+                            <li data-i18n="services.commercial.i3">🫧 Commercial space maintenance</li>
                         </ul>
-                    </div>
-                    <div class="service-item">
-                        <img src="assets/snow.jpg" alt="Limpieza de Nieve">
-                        <h3>Snow Cleaning Lowell Massachusetts</h3>
+                    </article>
+                    <article class="service-item">
+                        <img src="assets/snow-removal-lowell-ma.jpg" alt="Snow removal service in Lowell, MA" data-i18n-alt="services.snow.alt" width="620" height="420" loading="lazy" decoding="async">
+                        <h3 data-i18n="services.snow.title">Snow Removal in Lowell, MA</h3>
                         <ul>
-                            <li><a>🫧 Roof & Gutter Snow Removal </a></li>
-                            <li><a>🫧 Ice Melt & Anti-Slip Treatment</a></li>
-                            <li><a>🫧 Driveway & Sidewalk Snow Removal</a></li>
+                            <li data-i18n="services.snow.i1">🫧 Roof &amp; gutter snow removal</li>
+                            <li data-i18n="services.snow.i2">🫧 Ice melt &amp; anti-slip treatment</li>
+                            <li data-i18n="services.snow.i3">🫧 Driveway &amp; sidewalk clearing</li>
                         </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="ofertas">
+        <section id="offers">
             <div class="container">
-                <h2>Special Offers</h2>
+                <h2 data-i18n="offers.title">Special Offers</h2>
                 <div class="offer-slider">
                     <div class="offer-item">
                         <div class="offer-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path d="M12 2L15.09 8.26L22 9L17 14L18.18 21L12 17.77L5.82 21L7 14L2 9L8.91 8.26L12 2Z" fill="#8dc63f" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3>5% off your first cleaning</h3>
-                        <p>Valid for new residential service clients</p>
+                        <h3 data-i18n="offers.o1.title">5% off your first cleaning</h3>
+                        <p data-i18n="offers.o1.text">Valid for new residential service clients</p>
                     </div>
                     <div class="offer-item">
                         <div class="offer-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path d="M8 6H21" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M8 12H21" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M8 18H21" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -188,49 +277,119 @@
                                 <path d="M3 18H3.01" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3>Quarterly maintenance package</h3>
-                        <p>Save 10% by subscribing to our quarterly plan</p>
+                        <h3 data-i18n="offers.o2.title">Quarterly maintenance package</h3>
+                        <p data-i18n="offers.o2.text">Save 10% by subscribing to our quarterly plan</p>
                     </div>
                     <div class="offer-item">
                         <div class="offer-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M9 22V12H15V22" stroke="#8dc63f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <h3>Post-construction cleaning + free sealing</h3>
-                        <p>Limited time only for projects over 100m²</p>
+                        <h3 data-i18n="offers.o3.title">Post-construction cleaning + free sealing</h3>
+                        <p data-i18n="offers.o3.text">Limited time only for projects over 100 m² (1,076 sq ft)</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="testimonios">
+        <section id="testimonials" aria-labelledby="testimonials-title">
             <div class="container">
-                <h2>What Our Clients Say</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-item">
-                        <p>"Excellent service, they left my floors looking like new. Highly recommended."</p>
-                        <cite>- María G., Residential Client</cite>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"SGM Clean Solutions transformed the look of our office. Professional and efficient."</p>
-                        <cite>- Juan R., Office Manager</cite>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"Their post-construction cleaning exceeded our expectations. We will hire them again."</p>
-                        <cite>- Carlos M., Builder</cite>
-                    </div>
+                <h2 id="testimonials-title" data-i18n="testimonials.title">What Our Clients Say</h2>
+
+                <!-- Google rating summary (filled in by reviews.js when Google reviews are available) -->
+                <div class="reviews-summary" id="reviews-summary" hidden>
+                    <span class="google-g" aria-hidden="true">G</span>
+                    <span class="reviews-rating" id="reviews-rating"></span>
+                    <span class="stars" id="reviews-stars" aria-hidden="true"></span>
+                    <span class="reviews-count" id="reviews-count"></span>
                 </div>
+
+                <div class="reviews-carousel" id="reviews-carousel" aria-roledescription="carousel" data-i18n-aria-label="testimonials.carouselLabel" aria-label="Customer reviews">
+                    <button class="carousel-btn prev" type="button" data-i18n-aria-label="testimonials.prev" aria-label="Previous review">&#8249;</button>
+                    <div class="carousel-track" id="reviews-track" tabindex="0">
+                        <!-- Fallback testimonials, replaced by the real Google reviews when they load -->
+                        <figure class="testimonial-item review-card">
+                            <blockquote><p data-i18n="testimonials.t1.text">"Excellent service, they left my floors looking like new. Highly recommended."</p></blockquote>
+                            <figcaption><cite data-i18n="testimonials.t1.author">- María G., Residential Client</cite></figcaption>
+                        </figure>
+                        <figure class="testimonial-item review-card">
+                            <blockquote><p data-i18n="testimonials.t2.text">"SGM Clean Solutions transformed the look of our office. Professional and efficient."</p></blockquote>
+                            <figcaption><cite data-i18n="testimonials.t2.author">- Juan R., Office Manager</cite></figcaption>
+                        </figure>
+                        <figure class="testimonial-item review-card">
+                            <blockquote><p data-i18n="testimonials.t3.text">"Their post-construction cleaning exceeded our expectations. We will hire them again."</p></blockquote>
+                            <figcaption><cite data-i18n="testimonials.t3.author">- Carlos M., Builder</cite></figcaption>
+                        </figure>
+                    </div>
+                    <button class="carousel-btn next" type="button" data-i18n-aria-label="testimonials.next" aria-label="Next review">&#8250;</button>
+                </div>
+                <div class="carousel-dots" id="reviews-dots"></div>
+
+                <div class="reviews-actions">
+                    <a href="https://maps.app.goo.gl/XUufZ51goBra3DHv9" class="cta-button" id="reviews-link" target="_blank" rel="noopener noreferrer" data-i18n="testimonials.seeAll">See all our reviews on Google</a>
+                    <a href="https://maps.app.goo.gl/XUufZ51goBra3DHv9" class="cta-button cta-secondary" id="write-review-link" target="_blank" rel="noopener noreferrer" data-i18n="testimonials.write">Leave us a review</a>
+                </div>
+                <p class="reviews-attribution" id="reviews-attribution" hidden data-i18n="testimonials.attribution">Reviews from Google</p>
             </div>
         </section>
 
-        <section id="cotizacion">
+        <section id="quote">
             <div class="container">
-                <h2>Request a Free Quote</h2>
-                <div class="google-form-embed">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJM9_p-e3YPBH5RSmSOJ9NgMV_fDypkii356dtvTsJUdmu4w/viewform?embedded=true" width="640" height="1222" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-</div>
+                <h2 data-i18n="quote.title">Request a Free Quote</h2>
+                <p class="section-intro" data-i18n="quote.intro">Tell us about your space and we will get back to you as soon as possible.</p>
+                <form id="quote-form" novalidate autocomplete="on">
+                    <div class="form-field">
+                        <label for="qf-name" class="visually-hidden" data-i18n="form.name">Full name</label>
+                        <input id="qf-name" type="text" name="name" placeholder="Full name" data-i18n-placeholder="form.name" required minlength="2" maxlength="100" autocomplete="name">
+                    </div>
+                    <div class="form-field">
+                        <label for="qf-email" class="visually-hidden" data-i18n="form.email">Email</label>
+                        <input id="qf-email" type="email" name="email" placeholder="Email" data-i18n-placeholder="form.email" required maxlength="254" autocomplete="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="qf-phone" class="visually-hidden" data-i18n="form.phone">Phone (optional)</label>
+                        <input id="qf-phone" type="tel" name="phone" placeholder="Phone (optional)" data-i18n-placeholder="form.phone" maxlength="25" autocomplete="tel">
+                    </div>
+                    <div class="form-field">
+                        <label for="qf-service" class="visually-hidden" data-i18n="form.service">Service</label>
+                        <select id="qf-service" name="service" required>
+                            <option value="" data-i18n="form.selectService">Select a service</option>
+                            <option value="office" data-i18n="form.services.office">Office Cleaning</option>
+                            <option value="floors" data-i18n="form.services.floors">Specialized Floor Care</option>
+                            <option value="condos" data-i18n="form.services.condos">Apartments &amp; Condominiums</option>
+                            <option value="residential" data-i18n="form.services.residential">Residential Cleaning</option>
+                            <option value="commercial" data-i18n="form.services.commercial">Commercial Cleaning</option>
+                            <option value="snow" data-i18n="form.services.snow">Snow Removal</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="qf-message" class="visually-hidden" data-i18n="form.messageLabel">Additional details</label>
+                        <textarea id="qf-message" name="message" placeholder="Additional details (city, size of the space, preferred dates…)" data-i18n-placeholder="form.message" maxlength="1000"></textarea>
+                    </div>
+
+                    <!-- Anti-spam honeypot: hidden from humans, bots tend to fill it in -->
+                    <div class="hp-field" aria-hidden="true">
+                        <label for="qf-website">Leave this field empty</label>
+                        <input id="qf-website" type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="form-field consent-field">
+                        <label for="qf-consent">
+                            <input id="qf-consent" type="checkbox" name="consent" value="yes" required>
+                            <span data-i18n="form.consent">I agree that SGM Clean Solutions may store my information to respond to this quote request.</span>
+                        </label>
+                    </div>
+
+                    <!-- Cloudflare Turnstile widget is inserted here when enabled in config.js -->
+                    <div id="turnstile-container"></div>
+
+                    <button type="submit" data-i18n="form.submit">Submit Request</button>
+
+                    <p class="privacy-note" data-i18n="form.privacyNote">🔒 Your information is sent over an encrypted connection and used only to answer your request. We will never ask for passwords, bank details or payments through email or this form.</p>
+                </form>
+                <div id="form-message" role="status" aria-live="polite"></div>
             </div>
         </section>
     </main>
@@ -239,31 +398,39 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p id="footer-phone">Teléfono: +1(954) 245-1566</p>
-                    <p id="footer-email">Email: info@sgmcleansolutions.com</p>
-                    <p id="footer-address">Dirección: 86 Agawam St, Lowell Massachusetts</p>
+                    <h2 class="footer-title" data-i18n="footer.contact">Contact</h2>
+                    <address>
+                        <p><span data-i18n="footer.phone">Phone:</span> <a href="tel:+19542451566">+1 (954) 245-1566</a></p>
+                        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@sgmcleansolutions.com">info@sgmcleansolutions.com</a></p>
+                        <p><span data-i18n="footer.address">Address:</span> 86 Agawam St, Lowell, MA</p>
+                    </address>
                 </div>
                 <div class="footer-section">
-                    <h3>Enlaces Rápidos</h3>
+                    <h2 class="footer-title" data-i18n="footer.links">Quick Links</h2>
                     <ul>
-                        <li><a href="#inicio">Home</a></li>
-                        <li><a href="#servicios">Services</a></li>
-                        <li><a href="#ofertas">Offers</a></li>
-                        <li><a href="#testimonios">Testimonials</a></li>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                        <li><a href="#offers" data-i18n="nav.offers">Offers</a></li>
+                        <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+                        <li><a href="cleaning-services-massachusetts/" data-i18n="nav.tips" data-lang-link>Cleaning Tips</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Síguenos</h3>
+                    <h2 class="footer-title" data-i18n="footer.follow">Follow Us</h2>
                     <div class="social-icons">
-                        <a href="/https://www.facebook.com/share/19KAJE2QrU/" class="social-icon">Facebook</a>
-                        <a href="/https://www.instagram.com/sgm.cleansolutions?igsh=MTNoNXBvYngwYTgycw==" class="social-icon">Instagram</a>
-                        <a href="/" class="social-icon">Linkedin</a>
+                        <a href="https://www.facebook.com/SGMCleaningSolutions?locale=es_LA" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="SGM Clean Solutions on Facebook">
+                            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8.1v3h2.5V21h2.9z"/></svg>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/sgm.cleansolutions/?hl=es" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="SGM Clean Solutions on Instagram">
+                            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21 8.1c-.1-1.5-.4-2.8-1.5-3.9S17.1 2.8 15.6 2.7C14.1 2.6 9.9 2.6 8.4 2.7 6.9 2.8 5.6 3.1 4.5 4.2S3 6.6 3 8.1c-.1 1.5-.1 5.7 0 7.2.1 1.5.4 2.8 1.5 3.9s2.4 1.4 3.9 1.5c1.5.1 5.7.1 7.2 0 1.5-.1 2.8-.4 3.9-1.5s1.4-2.4 1.5-3.9c.1-1.5.1-5.7 0-7.2zM19.1 17a2.9 2.9 0 0 1-1.6 1.6c-1.1.4-3.8.3-5.5.3s-4.4.1-5.5-.3A2.9 2.9 0 0 1 4.9 17c-.4-1.1-.3-3.8-.3-5s-.1-3.9.3-5a2.9 2.9 0 0 1 1.6-1.6c1.1-.4 3.8-.3 5.5-.3s4.4-.1 5.5.3a2.9 2.9 0 0 1 1.6 1.6c.4 1.1.3 3.8.3 5s.1 3.9-.3 5z"/></svg>
+                            <span>Instagram</span>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SGM Clean Solutions. Todos los derechos reservados.</p>
+                <p>&copy; <span id="current-year">2025</span> SGM Clean Solutions. <span data-i18n="footer.rights">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
