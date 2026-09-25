@@ -20,6 +20,9 @@
  *  - NOTIFY_EMAIL      (optional) address that receives new-request alerts.
  *  - TURNSTILE_SECRET  (optional) Cloudflare Turnstile secret key. When set,
  *                      every request must carry a valid Turnstile token.
+ *  - PLACES_API_KEY    (optional) Google Places API (New) key, used to show
+ *                      the real Google reviews on the website.
+ *  - PLACE_ID          (optional) Google Place ID of the business profile.
  */
 
 var SHEET_NAME = 'Quotes';
@@ -102,9 +105,88 @@ function doPost(e) {
   }
 }
 
-// The endpoint never exposes stored data.
-function doGet() {
+// GET never exposes stored quote data. The only read action returns the
+// public Google reviews of the business (?action=reviews&lang=en|es).
+function doGet(e) {
+  var action = e && e.parameter ? e.parameter.action : '';
+  if (action === 'reviews') {
+    var lang = ALLOWED_LANGUAGES.indexOf(e.parameter.lang) !== -1 ? e.parameter.lang : 'en';
+    return json_(getGoogleReviews_(lang));
+  }
   return json_({ result: 'ok' });
+}
+
+var REVIEWS_CACHE_SECONDS = 6 * 60 * 60; // Places API is called at most 4 times a day per language
+
+// Fetches rating and the latest reviews from the Google Places API (New),
+// keeping the API key on the server and caching the result.
+function getGoogleReviews_(lang) {
+  var cache = CacheService.getScriptCache();
+  var cacheKey = 'reviews:' + lang;
+  var cached = cache.get(cacheKey);
+  if (cached) return JSON.parse(cached);
+
+  var props = PropertiesService.getScriptProperties();
+  var apiKey = props.getProperty('PLACES_API_KEY');
+  var placeId = props.getProperty('PLACE_ID');
+  if (!apiKey || !placeId || !/^[A-Za-z0-9_-]{10,200}$/.test(placeId)) {
+    return { result: 'error', code: 'not_configured' };
+  }
+
+  try {
+    var response = UrlFetchApp.fetch(
+      'https://places.googleapis.com/v1/places/' + encodeURIComponent(placeId) + '?languageCode=' + lang,
+      {
+        method: 'get',
+        headers: {
+          'X-Goog-Api-Key': apiKey,
+          'X-Goog-FieldMask': 'rating,userRatingCount,googleMapsUri,googleMapsLinks,reviews'
+        },
+        muteHttpExceptions: true
+      }
+    );
+    if (response.getResponseCode() !== 200) {
+      console.error('Places API error ' + response.getResponseCode() + ': ' + response.getContentText().slice(0, 300));
+      return { result: 'error', code: 'upstream_error' };
+    }
+
+    var place = JSON.parse(response.getContentText());
+    var links = place.googleMapsLinks || {};
+    var result = {
+      result: 'success',
+      rating: typeof place.rating === 'number' ? place.rating : null,
+      total: typeof place.userRatingCount === 'number' ? place.userRatingCount : 0,
+      reviewsUrl: safeGoogleUrl_(links.reviewsUri || place.googleMapsUri),
+      writeReviewUrl: safeGoogleUrl_(links.writeAReviewUri),
+      reviews: (place.reviews || []).map(function (r) {
+        var text = (r.text && r.text.text) || (r.originalText && r.originalText.text) || '';
+        var author = r.authorAttribution || {};
+        return {
+          author: clean_(author.displayName || '').slice(0, 80),
+          authorUrl: safeGoogleUrl_(author.uri),
+          photo: safeGoogleUrl_(author.photoUri),
+          rating: Math.max(0, Math.min(5, Math.round(Number(r.rating) || 0))),
+          time: clean_(r.relativePublishTimeDescription || '').slice(0, 40),
+          publishTime: clean_(r.publishTime || '').slice(0, 40),
+          text: clean_(text, true).slice(0, 1200),
+          url: safeGoogleUrl_(r.googleMapsUri)
+        };
+      }).filter(function (r) { return r.text && r.rating >= 4; })
+    };
+
+    cache.put(cacheKey, JSON.stringify(result), REVIEWS_CACHE_SECONDS);
+    return result;
+  } catch (err) {
+    console.error('Reviews error: ' + err);
+    return { result: 'error', code: 'server_error' };
+  }
+}
+
+// Only allows https links that point to Google domains.
+function safeGoogleUrl_(value) {
+  var url = String(value || '');
+  if (/^\/\//.test(url)) url = 'https:' + url;
+  return /^https:\/\/([a-z0-9-]+\.)*(google\.com|googleusercontent\.com|goo\.gl)(\/|$)/i.test(url) ? url : '';
 }
 
 /* ----------------------------------------------------------------------- */

@@ -17,6 +17,8 @@ cualquier hosting estático (GitHub Pages, Netlify, etc.).
    | `NOTIFY_EMAIL`     | recomendada | Correo que recibe el aviso de cada solicitud (p. ej. `info@sgmcleansolutions.com`). |
    | `SHEET_ID`         | no          | ID de la hoja si el script **no** está vinculado a ella. |
    | `TURNSTILE_SECRET` | no          | Clave secreta de Cloudflare Turnstile (ver abajo). |
+   | `PLACES_API_KEY`   | para reseñas | Clave de Google Places API (New) para mostrar las reseñas de Google (ver abajo). |
+   | `PLACE_ID`         | para reseñas | Place ID del perfil de Google del negocio. |
 4. **Implementar → Gestionar implementaciones**:
    - Si ya había una implementación (por ejemplo, la URL que ya figura en
      `config.js`, compartida con el otro sitio): edítala (✏) → *Versión: Nueva
@@ -31,6 +33,30 @@ cualquier hosting estático (GitHub Pages, Netlify, etc.).
 > "Cualquier persona" solo permite **enviar** solicitudes. El endpoint nunca
 > devuelve datos guardados (`doGet` responde únicamente `{"result":"ok"}`), y la
 > hoja sigue siendo privada.
+
+## Reseñas reales de Google en la sección "What Our Clients Say"
+
+La web muestra en un carrusel la calificación y las reseñas más recientes del
+perfil de Google del negocio. El script las consulta a Google (así la clave de
+la API nunca está en la web), las guarda en caché 6 horas y la web las pide con
+`?action=reviews`. Mientras no esté configurado, el carrusel muestra los
+testimonios escritos en `index.html`.
+
+1. En <https://console.cloud.google.com>: crea (o elige) un proyecto, activa
+   **Places API (New)** y la facturación (Google da un cupo mensual gratuito; con
+   la caché de 6 h se hacen ~250 consultas al mes).
+2. **APIs y servicios → Credenciales → Crear clave de API**. Restríngela a
+   *Places API (New)*.
+3. Busca el **Place ID** del negocio en
+   <https://developers.google.com/maps/documentation/places/web-service/place-id>
+   (escribe "SGM Clean Solutions, 86 Agawam St, Lowell").
+4. Agrega `PLACES_API_KEY` y `PLACE_ID` en las propiedades del script y publica
+   una nueva versión.
+
+Google devuelve como máximo **5 reseñas** (las más relevantes). El script
+muestra solo las de 4 y 5 estrellas; la calificación promedio y el total de
+reseñas sí son los reales. Para mostrarlas todas, cambia `r.rating >= 4` por
+`r.rating >= 1` en `getGoogleReviews_`.
 
 ## Anti-bots opcional: Cloudflare Turnstile (gratuito)
 

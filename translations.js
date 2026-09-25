@@ -104,7 +104,17 @@ window.SGM_TRANSLATIONS = {
             title: 'What Our Clients Say',
             t1: { text: '"Excellent service, they left my floors looking like new. Highly recommended."', author: '- María G., Residential Client' },
             t2: { text: '"SGM Clean Solutions transformed the look of our office. Professional and efficient."', author: '- Juan R., Office Manager' },
-            t3: { text: '"Their post-construction cleaning exceeded our expectations. We will hire them again."', author: '- Carlos M., Builder' }
+            t3: { text: '"Their post-construction cleaning exceeded our expectations. We will hire them again."', author: '- Carlos M., Builder' },
+            carouselLabel: 'Customer reviews',
+            prev: 'Previous review',
+            next: 'Next review',
+            goTo: 'Go to review',
+            seeAll: 'See all our reviews on Google',
+            write: 'Leave us a review',
+            attribution: 'Reviews from Google',
+            count: 'Based on {n} Google reviews',
+            readOnGoogle: 'Read on Google',
+            rated: 'Rated {n} out of 5'
         },
         quote: {
             title: 'Request a Free Quote',
@@ -330,7 +340,17 @@ window.SGM_TRANSLATIONS = {
             title: 'Lo que dicen nuestros clientes',
             t1: { text: '"Excelente servicio, dejaron mis pisos como nuevos. Muy recomendados."', author: '- María G., Cliente residencial' },
             t2: { text: '"SGM Clean Solutions transformó la imagen de nuestra oficina. Profesionales y eficientes."', author: '- Juan R., Gerente de oficina' },
-            t3: { text: '"Su limpieza post-construcción superó nuestras expectativas. Los volveremos a contratar."', author: '- Carlos M., Constructor' }
+            t3: { text: '"Su limpieza post-construcción superó nuestras expectativas. Los volveremos a contratar."', author: '- Carlos M., Constructor' },
+            carouselLabel: 'Opiniones de clientes',
+            prev: 'Opinión anterior',
+            next: 'Siguiente opinión',
+            goTo: 'Ir a la opinión',
+            seeAll: 'Ver todas nuestras reseñas en Google',
+            write: 'Déjanos una reseña',
+            attribution: 'Reseñas de Google',
+            count: 'Basado en {n} reseñas de Google',
+            readOnGoogle: 'Leer en Google',
+            rated: 'Calificación: {n} de 5'
         },
         quote: {
             title: 'Solicite una Cotización Gratuita',

@@ -13,7 +13,7 @@
         script-src 'self' https://www.googletagmanager.com https://*.tawk.to https://cdn.jsdelivr.net https://challenges.cloudflare.com;
         style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com;
         font-src 'self' https://*.tawk.to https://fonts.gstatic.com;
-        img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com https://*.tawk.to https://cdn.jsdelivr.net https://tawk.link https://s3.amazonaws.com;
+        img-src 'self' data: https://*.googleusercontent.com https://www.googletagmanager.com https://*.google-analytics.com https://*.tawk.to https://cdn.jsdelivr.net https://tawk.link https://s3.amazonaws.com;
         media-src 'self' https://*.tawk.to;
         connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.tawk.to wss://*.tawk.to;
         frame-src https://*.tawk.to https://challenges.cloudflare.com;
@@ -76,6 +76,7 @@
             "streetAddress": "86 Agawam St",
             "addressLocality": "Lowell",
             "addressRegion": "MA",
+            "postalCode": "01852",
             "addressCountry": "US"
         },
         "areaServed": [
@@ -87,6 +88,7 @@
             { "@type": "State", "name": "Massachusetts" }
         ],
         "knowsLanguage": ["en", "es"],
+        "hasMap": "https://maps.app.goo.gl/XUufZ51goBra3DHv9",
         "sameAs": [
             "https://www.facebook.com/SGMCleaningSolutions",
             "https://www.instagram.com/sgm.cleansolutions/"
@@ -113,6 +115,7 @@
     <script src="translations.js" defer></script>
     <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="reviews.js" defer></script>
     <script src="tawk.js" defer></script>
 </head>
 
@@ -291,23 +294,44 @@
             </div>
         </section>
 
-        <section id="testimonials">
+        <section id="testimonials" aria-labelledby="testimonials-title">
             <div class="container">
-                <h2 data-i18n="testimonials.title">What Our Clients Say</h2>
-                <div class="testimonial-grid">
-                    <figure class="testimonial-item">
-                        <blockquote><p data-i18n="testimonials.t1.text">"Excellent service, they left my floors looking like new. Highly recommended."</p></blockquote>
-                        <figcaption><cite data-i18n="testimonials.t1.author">- María G., Residential Client</cite></figcaption>
-                    </figure>
-                    <figure class="testimonial-item">
-                        <blockquote><p data-i18n="testimonials.t2.text">"SGM Clean Solutions transformed the look of our office. Professional and efficient."</p></blockquote>
-                        <figcaption><cite data-i18n="testimonials.t2.author">- Juan R., Office Manager</cite></figcaption>
-                    </figure>
-                    <figure class="testimonial-item">
-                        <blockquote><p data-i18n="testimonials.t3.text">"Their post-construction cleaning exceeded our expectations. We will hire them again."</p></blockquote>
-                        <figcaption><cite data-i18n="testimonials.t3.author">- Carlos M., Builder</cite></figcaption>
-                    </figure>
+                <h2 id="testimonials-title" data-i18n="testimonials.title">What Our Clients Say</h2>
+
+                <!-- Google rating summary (filled in by reviews.js when Google reviews are available) -->
+                <div class="reviews-summary" id="reviews-summary" hidden>
+                    <span class="google-g" aria-hidden="true">G</span>
+                    <span class="reviews-rating" id="reviews-rating"></span>
+                    <span class="stars" id="reviews-stars" aria-hidden="true"></span>
+                    <span class="reviews-count" id="reviews-count"></span>
                 </div>
+
+                <div class="reviews-carousel" id="reviews-carousel" aria-roledescription="carousel" data-i18n-aria-label="testimonials.carouselLabel" aria-label="Customer reviews">
+                    <button class="carousel-btn prev" type="button" data-i18n-aria-label="testimonials.prev" aria-label="Previous review">&#8249;</button>
+                    <div class="carousel-track" id="reviews-track" tabindex="0">
+                        <!-- Fallback testimonials, replaced by the real Google reviews when they load -->
+                        <figure class="testimonial-item review-card">
+                            <blockquote><p data-i18n="testimonials.t1.text">"Excellent service, they left my floors looking like new. Highly recommended."</p></blockquote>
+                            <figcaption><cite data-i18n="testimonials.t1.author">- María G., Residential Client</cite></figcaption>
+                        </figure>
+                        <figure class="testimonial-item review-card">
+                            <blockquote><p data-i18n="testimonials.t2.text">"SGM Clean Solutions transformed the look of our office. Professional and efficient."</p></blockquote>
+                            <figcaption><cite data-i18n="testimonials.t2.author">- Juan R., Office Manager</cite></figcaption>
+                        </figure>
+                        <figure class="testimonial-item review-card">
+                            <blockquote><p data-i18n="testimonials.t3.text">"Their post-construction cleaning exceeded our expectations. We will hire them again."</p></blockquote>
+                            <figcaption><cite data-i18n="testimonials.t3.author">- Carlos M., Builder</cite></figcaption>
+                        </figure>
+                    </div>
+                    <button class="carousel-btn next" type="button" data-i18n-aria-label="testimonials.next" aria-label="Next review">&#8250;</button>
+                </div>
+                <div class="carousel-dots" id="reviews-dots"></div>
+
+                <div class="reviews-actions">
+                    <a href="https://maps.app.goo.gl/XUufZ51goBra3DHv9" class="cta-button" id="reviews-link" target="_blank" rel="noopener noreferrer" data-i18n="testimonials.seeAll">See all our reviews on Google</a>
+                    <a href="https://maps.app.goo.gl/XUufZ51goBra3DHv9" class="cta-button cta-secondary" id="write-review-link" target="_blank" rel="noopener noreferrer" data-i18n="testimonials.write">Leave us a review</a>
+                </div>
+                <p class="reviews-attribution" id="reviews-attribution" hidden data-i18n="testimonials.attribution">Reviews from Google</p>
             </div>
         </section>
 
