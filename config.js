@@ -14,7 +14,7 @@
  * TURNSTILE_SECRET in the Apps Script "Script properties".
  */
 window.SGM_CONFIG = Object.freeze({
-    FORM_ENDPOINT: 'https://script.google.com/macros/s/AKfycbxFkXgFlGUfAVALmkDtQfR5ZlGQ8SBx6e-010a7GV09QYdRcfPN6ktocBHYGEtJtdHg/exec',
+    FORM_ENDPOINT: 'https://script.google.com/macros/s/AKfycbwWL-LraWaxGiJnCuHhMy4W9U7P6nKTpFh7aGQUoOEjpf9fjjtTHqKDINTXKaz5Z896-A/exec',
     GOOGLE_REVIEWS: true,
     TURNSTILE_SITE_KEY: '',
     DEFAULT_LANGUAGE: 'en',
