@@ -2,14 +2,10 @@
 Options -Indexes
 DirectoryIndex index.html
 
+# HTTPS and www redirects are left to Hostinger (hPanel > Security > SSL >
+# "Force HTTPS") so the site still loads before the certificate is issued.
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
-    # Always serve over HTTPS on the bare domain (no www).
-    RewriteCond %{HTTPS} off [OR]
-    RewriteCond %{HTTP_HOST} ^www\. [NC]
-    RewriteRule ^ https://sgmlcleansolutions.com%{REQUEST_URI} [L,R=301]
-
     # Old tips URL from the previous site.
     RewriteRule ^cleaning-tips-massachusetts/?$ /cleaning-services-massachusetts/ [L,R=301]
 </IfModule>
@@ -26,7 +22,6 @@ RedirectMatch 404 ^/(\.git|backend)(/|$)
     Header always set X-Content-Type-Options "nosniff"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     Header always set X-Frame-Options "SAMEORIGIN"
-    Header always set Strict-Transport-Security "max-age=31536000"
 </IfModule>
 
 <IfModule mod_expires.c>
