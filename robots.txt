@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /backend/
 
-Sitemap: https://www.sgmcleansolutions.com/sitemap.xml
+Sitemap: https://sgmlcleansolutions.com/sitemap.xml

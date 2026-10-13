@@ -1,6 +1,6 @@
 # SGM Clean Solutions – Website
 
-Static website for **SGM Clean Solutions** (cleaning, floor care and snow removal in Lowell and across Massachusetts) — https://www.sgmcleansolutions.com
+Static website for **SGM Clean Solutions** (cleaning, floor care and snow removal in Lowell and across Massachusetts) — https://sgmlcleansolutions.com
 
 - **Language:** English by default, with a Spanish translation from the language
   selector (remembered per visitor). Each language has its own URL
@@ -34,7 +34,7 @@ Static website for **SGM Clean Solutions** (cleaning, floor care and snow remova
 
 1. Deploy the form backend (see its README) and check `FORM_ENDPOINT` in `config.js`.
 2. In [Google Search Console](https://search.google.com/search-console) add the domain
-   and submit `https://www.sgmcleansolutions.com/sitemap.xml`.
+   and submit `https://sgmlcleansolutions.com/sitemap.xml`.
 3. Create/claim the **Google Business Profile** with the same name, address and phone
    as the website (NAP consistency is key for local SEO), and link the website.
 
