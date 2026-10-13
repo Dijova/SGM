@@ -44,3 +44,15 @@ Static website for **SGM Clean Solutions** (cleaning, floor care and snow remova
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
+
+## Deploying to Hostinger
+
+Hostinger needs `index.html` **directly inside `public_html`**. GitHub's
+"Download ZIP" wraps everything in an `SGM-main/` folder, so Hostinger cannot
+find the site. Either:
+
+- upload `sgm-hostinger.zip` (built with
+  `git archive --format=zip -o sgm-hostinger.zip HEAD`, files at the root,
+  without `backend/`), or
+- extract `SGM-main.zip` and upload the **contents** of `SGM-main/` (not the
+  folder itself) into `public_html`, including the hidden `.htaccess` file.
