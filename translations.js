@@ -74,8 +74,8 @@ window.SGM_TRANSLATIONS = {
             intro: 'Real jobs by the SGM crew: stripped and waxed floors, burnished hallways, offices, homes and winter snow removal across Massachusetts.',
             filter: 'Filter gallery',
             f: { all: 'All', floors: 'Floor care', video: 'Videos', commercial: 'Commercial', residential: 'Residential', snow: 'Snow removal' },
-            i1: 'Burnishing · Commercial floor', i2: 'Strip & wax · Lowell', i3: 'Office cleaning', i4: 'Commercial cleaning', i5: 'Residential · Lowell', i6: 'Apartments & condos', i7: 'Our crew', i8: 'Snow removal',
-            a1: 'Floor machine burnishing a commercial floor in Massachusetts', a2: 'Floor stripping and waxing on a commercial floor in Lowell, MA', a3: 'SGM crew cleaning and disinfecting office desks in Massachusetts', a4: 'Restaurant tables sanitized during a commercial cleaning visit', a5: 'Residential house cleaning in Lowell, MA', a6: 'Apartment and condominium common areas maintained in Massachusetts', a7: 'SGM Clean Solutions floor care and cleaning crew', a8: 'Snow blower clearing a driveway in Lowell, MA',
+            i1: 'Burnishing · Commercial floor', i2: 'Strip & wax · Lowell', i3: 'Office cleaning', i4: 'Commercial cleaning', i5: 'Residential · Lowell', i6: 'Apartments & condos', i7: 'Our crew', i8: 'Snow removal', i9: 'Floor burnishing · Lowell',
+            a1: 'Floor machine burnishing a commercial floor in Massachusetts', a2: 'Floor stripping and waxing on a commercial floor in Lowell, MA', a3: 'SGM crew cleaning and disinfecting office desks in Massachusetts', a4: 'Restaurant tables sanitized during a commercial cleaning visit', a5: 'Residential house cleaning in Lowell, MA', a6: 'Apartment and condominium common areas maintained in Massachusetts', a7: 'SGM Clean Solutions floor care and cleaning crew', a8: 'Snow blower clearing a driveway in Lowell, MA', a9: 'SGM Clean Solutions technician burnishing a glossy commercial floor in Lowell, MA',
             cta: { text: 'Want your floors to look like this?', ig: 'More on Instagram' },
             seo: {
                 title: 'Floor care projects in Lowell and across Massachusetts',
@@ -99,7 +99,7 @@ window.SGM_TRANSLATIONS = {
             item2: 'Personalized cleaning plans',
             item3: 'Eco-friendly products',
             item4: 'Bilingual service: English & Spanish',
-            imageAlt: 'SGM Clean Solutions professional cleaning team in Massachusetts'
+            imageAlt: 'SGM Clean Solutions technician burnishing a glossy commercial floor in Lowell, MA'
         },
         services: {
             title: 'More Cleaning Services in Massachusetts',
@@ -275,8 +275,8 @@ window.SGM_TRANSLATIONS = {
             intro: 'Trabajos reales del equipo SGM: pisos decapados y encerados, pasillos abrillantados, oficinas, hogares y remoción de nieve en todo Massachusetts.',
             filter: 'Filtrar galería',
             f: { all: 'Todo', floors: 'Pisos', video: 'Videos', commercial: 'Comercial', residential: 'Residencial', snow: 'Nieve' },
-            i1: 'Abrillantado · Piso comercial', i2: 'Decapado y encerado · Lowell', i3: 'Limpieza de oficinas', i4: 'Limpieza comercial', i5: 'Residencial · Lowell', i6: 'Apartamentos y condominios', i7: 'Nuestro equipo', i8: 'Remoción de nieve',
-            a1: 'Máquina abrillantando un piso comercial en Massachusetts', a2: 'Decapado y encerado de un piso comercial en Lowell, MA', a3: 'Equipo SGM limpiando y desinfectando escritorios de oficina en Massachusetts', a4: 'Mesas de restaurante desinfectadas en una limpieza comercial', a5: 'Limpieza residencial de una casa en Lowell, MA', a6: 'Áreas comunes de apartamentos y condominios en Massachusetts', a7: 'Equipo de cuidado de pisos y limpieza de SGM Clean Solutions', a8: 'Quitanieves limpiando una entrada en Lowell, MA',
+            i1: 'Abrillantado · Piso comercial', i2: 'Decapado y encerado · Lowell', i3: 'Limpieza de oficinas', i4: 'Limpieza comercial', i5: 'Residencial · Lowell', i6: 'Apartamentos y condominios', i7: 'Nuestro equipo', i8: 'Remoción de nieve', i9: 'Abrillantado de pisos · Lowell',
+            a1: 'Máquina abrillantando un piso comercial en Massachusetts', a2: 'Decapado y encerado de un piso comercial en Lowell, MA', a3: 'Equipo SGM limpiando y desinfectando escritorios de oficina en Massachusetts', a4: 'Mesas de restaurante desinfectadas en una limpieza comercial', a5: 'Limpieza residencial de una casa en Lowell, MA', a6: 'Áreas comunes de apartamentos y condominios en Massachusetts', a7: 'Equipo de cuidado de pisos y limpieza de SGM Clean Solutions', a8: 'Quitanieves limpiando una entrada en Lowell, MA', a9: 'Técnico de SGM Clean Solutions abrillantando un piso comercial en Lowell, MA',
             cta: { text: '¿Quieres que tus pisos luzcan así?', ig: 'Más en Instagram' },
             seo: {
                 title: 'Proyectos de cuidado de pisos en Lowell y todo Massachusetts',
@@ -300,7 +300,7 @@ window.SGM_TRANSLATIONS = {
             item2: 'Planes de limpieza personalizados',
             item3: 'Productos ecológicos',
             item4: 'Atención bilingüe: inglés y español',
-            imageAlt: 'Equipo profesional de limpieza de SGM Clean Solutions en Massachusetts'
+            imageAlt: 'Técnico de SGM Clean Solutions abrillantando un piso comercial en Lowell, MA'
         },
         services: {
             title: 'Más Servicios de Limpieza en Massachusetts',
