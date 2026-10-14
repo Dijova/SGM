@@ -27,10 +27,9 @@ window.SGM_TRANSLATIONS = {
             home: 'Home',
             about: 'About Us',
             services: 'Services',
-            offers: 'Offers',
             testimonials: 'Reviews',
             floorCare: 'Floor Care',
-            gallery: 'Our Work',
+            gallery: 'Gallery',
             area: 'Service Area',
             quote: 'Free Quote'
         },
@@ -39,16 +38,16 @@ window.SGM_TRANSLATIONS = {
             title: 'Floors that shine like new, across Massachusetts',
             subtitle: 'Stripping & waxing, buffing, deep scrubbing and carpet care for offices, schools, stores and homes — plus complete cleaning and snow removal.',
             cta: 'Get a Free Floor Quote',
-            gallery: 'See Our Work',
+            gallery: 'View Gallery',
             b1: 'Insured & trained crew',
             b2: 'Nights & weekends available',
             b3: 'English & Spanish'
         },
         floor: {
             alt: 'Floor stripping and waxing machine on a commercial floor',
-            tag: 'Our specialty',
-            eyebrow: 'Specialized floor care',
-            title: 'Professional floor care for every surface',
+            tag: 'Our specialty: floor care',
+            eyebrow: 'Floor care specialists · Lowell, MA',
+            title: 'Our floor care services',
             intro: 'VCT, vinyl, tile, concrete, hardwood and carpet: we restore worn floors and keep them protected with the right products and commercial equipment.',
             l1: { t: 'Strip & wax', d: 'Remove old finish and lay fresh coats for a deep, lasting shine.' },
             l2: { t: 'Buffing & burnishing', d: 'High-speed polish that brings back gloss between waxings.' },
@@ -62,17 +61,6 @@ window.SGM_TRANSLATIONS = {
             s3: { t: 'Finish & protect', d: 'New wax or sealer, then burnished.' },
             s4: { t: 'Maintain', d: 'A plan that keeps the shine.' }
         },
-        work: {
-            eyebrow: 'Our work',
-            title: 'Photos & videos of real jobs',
-            intro: 'Before-and-after results from floors, offices and homes we take care of in Lowell and across Massachusetts.',
-            c1: 'Burnishing · Commercial floor',
-            c2: 'Strip & wax',
-            c3: 'Office cleaning',
-            c4: 'Commercial',
-            c5: 'Residential',
-            cta: 'Open the full gallery'
-        },
         area: {
             eyebrow: 'Service area',
             title: 'Based in Lowell, serving all of Massachusetts',
@@ -80,6 +68,7 @@ window.SGM_TRANSLATIONS = {
             directions: 'Open in Google Maps'
         },
         g: {
+            eyebrow: 'Our work',
             meta: { title: 'Floor Care & Cleaning Gallery: Real Jobs in Lowell, MA | SGM Clean Solutions', description: 'Photos and videos of floor stripping & waxing, burnishing, carpet and tile care and cleaning jobs by SGM Clean Solutions in Lowell and across Massachusetts.', og: 'Real floor stripping, waxing, burnishing and cleaning jobs in Lowell and across Massachusetts.' },
             title: 'Floor care & cleaning gallery in Massachusetts',
             intro: 'Real jobs by the SGM crew: stripped and waxed floors, burnished hallways, offices, homes and winter snow removal across Massachusetts.',
@@ -105,11 +94,11 @@ window.SGM_TRANSLATIONS = {
         about: {
             title: 'About SGM Clean Solutions',
             p1: 'At <strong>SGM Clean Solutions</strong> we provide high-quality cleaning and maintenance for homes and businesses in Lowell and throughout Massachusetts. Our commitment is excellence and sustainability.',
-            p2: 'We use <strong>professional equipment</strong> and certified, eco-friendly products that deliver impeccable results and a healthier environment for our clients.',
-            item1: '✅ Professional and trained team',
-            item2: '✅ Personalized cleaning plans',
-            item3: '✅ Eco-friendly products',
-            item4: '✅ Bilingual service: English & Spanish',
+            p2: 'Our specialty is <strong>floor care</strong>: VCT, vinyl, tile, concrete, hardwood and carpet. We restore worn floors and keep them protected with professional equipment and certified, eco-friendly products.',
+            item1: 'Professional and trained team',
+            item2: 'Personalized cleaning plans',
+            item3: 'Eco-friendly products',
+            item4: 'Bilingual service: English & Spanish',
             imageAlt: 'SGM Clean Solutions professional cleaning team in Massachusetts'
         },
         services: {
@@ -158,17 +147,10 @@ window.SGM_TRANSLATIONS = {
                 i3: '🫧 Driveway & sidewalk clearing'
             }
         },
-        offers: {
-            title: 'Special Offers',
-            o1: { title: '5% off your first cleaning', text: 'Valid for new residential service clients' },
-            o2: { title: 'Quarterly maintenance package', text: 'Save 10% by subscribing to our quarterly plan' },
-            o3: { title: 'Post-construction cleaning + free sealing', text: 'Limited time only for projects over 100 m² (1,076 sq ft)' }
-        },
         testimonials: {
             title: 'What Our Clients Say',
-            t1: { text: '"Excellent service, they left my floors looking like new. Highly recommended."', author: '- María G., Residential Client' },
-            t2: { text: '"SGM Clean Solutions transformed the look of our office. Professional and efficient."', author: '- Juan R., Office Manager' },
-            t3: { text: '"Their post-construction cleaning exceeded our expectations. We will hire them again."', author: '- Carlos M., Builder' },
+            summary: 'Our clients highlight our punctuality, attention to detail, friendly crew and clear communication, in homes and commercial spaces alike.',
+            source: 'Google review',
             carouselLabel: 'Customer reviews',
             prev: 'Previous review',
             next: 'Next review',
@@ -246,10 +228,9 @@ window.SGM_TRANSLATIONS = {
             home: 'Inicio',
             about: 'Nosotros',
             services: 'Servicios',
-            offers: 'Ofertas',
             testimonials: 'Reseñas',
             floorCare: 'Pisos',
-            gallery: 'Trabajos',
+            gallery: 'Galería',
             area: 'Cobertura',
             quote: 'Cotización Gratis'
         },
@@ -258,16 +239,16 @@ window.SGM_TRANSLATIONS = {
             title: 'Pisos que brillan como nuevos en todo Massachusetts',
             subtitle: 'Decapado y encerado, pulido, fregado profundo y limpieza de alfombras para oficinas, escuelas, tiendas y hogares, además de limpieza completa y remoción de nieve.',
             cta: 'Cotiza tus Pisos Gratis',
-            gallery: 'Ver Nuestros Trabajos',
+            gallery: 'Ver Galería',
             b1: 'Equipo asegurado y capacitado',
             b2: 'Noches y fines de semana',
             b3: 'Inglés y español'
         },
         floor: {
             alt: 'Máquina de decapado y encerado sobre un piso comercial',
-            tag: 'Nuestra especialidad',
-            eyebrow: 'Cuidado especializado de pisos',
-            title: 'Cuidado profesional para cada tipo de piso',
+            tag: 'Nuestra especialidad: pisos',
+            eyebrow: 'Especialistas en pisos · Lowell, MA',
+            title: 'Nuestros servicios de cuidado de pisos',
             intro: 'VCT, vinilo, cerámica, concreto, madera y alfombra: restauramos pisos desgastados y los mantenemos protegidos con los productos adecuados y equipo comercial.',
             l1: { t: 'Decapado y encerado', d: 'Retiramos el acabado viejo y aplicamos capas nuevas para un brillo profundo y duradero.' },
             l2: { t: 'Pulido y abrillantado', d: 'Pulido a alta velocidad que recupera el brillo entre enceradas.' },
@@ -281,17 +262,6 @@ window.SGM_TRANSLATIONS = {
             s3: { t: 'Acabado y protección', d: 'Cera o sellador nuevo, y después abrillantado.' },
             s4: { t: 'Mantenimiento', d: 'Un plan que conserva el brillo.' }
         },
-        work: {
-            eyebrow: 'Nuestros trabajos',
-            title: 'Fotos y videos de trabajos reales',
-            intro: 'Resultados de antes y después en pisos, oficinas y hogares que atendemos en Lowell y todo Massachusetts.',
-            c1: 'Abrillantado · Piso comercial',
-            c2: 'Decapado y encerado',
-            c3: 'Limpieza de oficinas',
-            c4: 'Comercial',
-            c5: 'Residencial',
-            cta: 'Ver la galería completa'
-        },
         area: {
             eyebrow: 'Zona de servicio',
             title: 'Desde Lowell, atendemos todo Massachusetts',
@@ -299,6 +269,7 @@ window.SGM_TRANSLATIONS = {
             directions: 'Abrir en Google Maps'
         },
         g: {
+            eyebrow: 'Nuestros trabajos',
             meta: { title: 'Galería de Pisos y Limpieza: Trabajos Reales en Lowell, MA | SGM Clean Solutions', description: 'Fotos y videos de decapado y encerado, abrillantado, alfombras, cerámica y trabajos de limpieza de SGM Clean Solutions en Lowell y todo Massachusetts.', og: 'Trabajos reales de decapado, encerado, abrillantado y limpieza en Lowell y todo Massachusetts.' },
             title: 'Galería de pisos y limpieza en Massachusetts',
             intro: 'Trabajos reales del equipo SGM: pisos decapados y encerados, pasillos abrillantados, oficinas, hogares y remoción de nieve en todo Massachusetts.',
@@ -324,11 +295,11 @@ window.SGM_TRANSLATIONS = {
         about: {
             title: 'Sobre SGM Clean Solutions',
             p1: 'En <strong>SGM Clean Solutions</strong> ofrecemos limpieza y mantenimiento de alta calidad para hogares y negocios en Lowell y todo Massachusetts. Nuestro compromiso es la excelencia y la sostenibilidad.',
-            p2: 'Utilizamos <strong>equipos profesionales</strong> y productos certificados y ecológicos que garantizan resultados impecables y un ambiente más saludable para nuestros clientes.',
-            item1: '✅ Equipo profesional y capacitado',
-            item2: '✅ Planes de limpieza personalizados',
-            item3: '✅ Productos ecológicos',
-            item4: '✅ Atención bilingüe: inglés y español',
+            p2: 'Nuestra especialidad es el <strong>cuidado de pisos</strong>: VCT, vinilo, cerámica, concreto, madera y alfombra. Restauramos pisos desgastados y los mantenemos protegidos con equipo profesional y productos certificados y ecológicos.',
+            item1: 'Equipo profesional y capacitado',
+            item2: 'Planes de limpieza personalizados',
+            item3: 'Productos ecológicos',
+            item4: 'Atención bilingüe: inglés y español',
             imageAlt: 'Equipo profesional de limpieza de SGM Clean Solutions en Massachusetts'
         },
         services: {
@@ -377,17 +348,10 @@ window.SGM_TRANSLATIONS = {
                 i3: '🫧 Limpieza de entradas y aceras'
             }
         },
-        offers: {
-            title: 'Ofertas Especiales',
-            o1: { title: '5% de descuento en tu primera limpieza', text: 'Válido para nuevos clientes de servicio residencial' },
-            o2: { title: 'Paquete de mantenimiento trimestral', text: 'Ahorra 10% suscribiéndote a nuestro plan trimestral' },
-            o3: { title: 'Limpieza post-construcción + sellado gratis', text: 'Por tiempo limitado para proyectos de más de 100 m² (1,076 pies²)' }
-        },
         testimonials: {
             title: 'Lo que dicen nuestros clientes',
-            t1: { text: '"Excelente servicio, dejaron mis pisos como nuevos. Muy recomendados."', author: '- María G., Cliente residencial' },
-            t2: { text: '"SGM Clean Solutions transformó la imagen de nuestra oficina. Profesionales y eficientes."', author: '- Juan R., Gerente de oficina' },
-            t3: { text: '"Su limpieza post-construcción superó nuestras expectativas. Los volveremos a contratar."', author: '- Carlos M., Constructor' },
+            summary: 'Nuestros clientes destacan nuestra puntualidad, atención al detalle, un equipo amable y una comunicación clara, tanto en hogares como en espacios comerciales.',
+            source: 'Reseña de Google',
             carouselLabel: 'Opiniones de clientes',
             prev: 'Opinión anterior',
             next: 'Siguiente opinión',
