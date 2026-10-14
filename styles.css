@@ -1214,7 +1214,9 @@ a.review-author:hover,
 @media (max-width: 900px) {
     .floor-grid, .about-grid, .area-grid { grid-template-columns: 1fr; gap: 32px; }
     .about-section .floor-list, .about-checks { grid-template-columns: 1fr; }
-    .floor-media img, .about-image img { aspect-ratio: 4 / 3; max-height: none; }
+    .floor-media img { aspect-ratio: 4 / 3; max-height: none; }
+    .about-image { order: 2; max-width: 520px; margin: 0 auto; width: 100%; }
+    .about-image img { aspect-ratio: auto; height: auto; max-height: none; object-fit: contain; }
     .floor-list { grid-template-columns: 1fr; }
     .floor-steps { grid-template-columns: 1fr 1fr; }
     .work-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }

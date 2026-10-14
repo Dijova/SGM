@@ -45,7 +45,6 @@ window.SGM_TRANSLATIONS = {
         },
         floor: {
             alt: 'Floor stripping and waxing machine on a commercial floor',
-            tag: 'Our specialty: floor care',
             eyebrow: 'Floor care specialists · Lowell, MA',
             title: 'Our floor care services',
             intro: 'VCT, vinyl, tile, concrete, hardwood and carpet: we restore worn floors and keep them protected with the right products and commercial equipment.',
@@ -246,7 +245,6 @@ window.SGM_TRANSLATIONS = {
         },
         floor: {
             alt: 'Máquina de decapado y encerado sobre un piso comercial',
-            tag: 'Nuestra especialidad: pisos',
             eyebrow: 'Especialistas en pisos · Lowell, MA',
             title: 'Nuestros servicios de cuidado de pisos',
             intro: 'VCT, vinilo, cerámica, concreto, madera y alfombra: restauramos pisos desgastados y los mantenemos protegidos con los productos adecuados y equipo comercial.',
