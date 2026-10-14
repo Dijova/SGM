@@ -6,8 +6,9 @@ DirectoryIndex index.html
 # "Force HTTPS") so the site still loads before the certificate is issued.
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    # Old tips URL from the previous site.
-    RewriteRule ^cleaning-tips-massachusetts/?$ /cleaning-services-massachusetts/ [L,R=301]
+    # Old cleaning-tips pages now live as the project gallery.
+    RewriteRule ^cleaning-tips-massachusetts/?$ /gallery/ [L,R=301]
+    RewriteRule ^cleaning-services-massachusetts(/.*)?$ /gallery/ [L,R=301]
 </IfModule>
 
 ErrorDocument 404 /404.html

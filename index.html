@@ -16,7 +16,7 @@
         img-src 'self' data: https://*.googleusercontent.com https://www.googletagmanager.com https://*.google-analytics.com https://*.tawk.to https://cdn.jsdelivr.net https://tawk.link https://s3.amazonaws.com;
         media-src 'self' https://*.tawk.to;
         connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.tawk.to wss://*.tawk.to;
-        frame-src https://*.tawk.to https://challenges.cloudflare.com;
+        frame-src https://*.tawk.to https://challenges.cloudflare.com https://www.google.com https://maps.google.com;
         form-action 'self';
         base-uri 'self';
         object-src 'none';
@@ -24,8 +24,8 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- Primary SEO -->
-    <title data-i18n="meta.title">Cleaning Services in Lowell, MA &amp; Massachusetts | SGM Clean Solutions</title>
-    <meta name="description" content="SGM Clean Solutions offers professional residential, commercial, office and floor cleaning, stripping &amp; waxing and snow removal in Lowell and across Massachusetts. Request a free quote today." data-i18n-content="meta.description">
+    <title data-i18n="meta.title">Floor Care &amp; Cleaning Services in Lowell, MA | SGM Clean Solutions</title>
+    <meta name="description" content="Floor stripping &amp; waxing, buffing, burnishing, deep scrub &amp; recoat, carpet and tile care in Lowell and across Massachusetts, plus commercial, residential cleaning and snow removal. Free quote." data-i18n-content="meta.description">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="SGM Clean Solutions">
     <meta name="theme-color" content="#343434">
@@ -37,8 +37,8 @@
     <!-- Open Graph / social sharing -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="SGM Clean Solutions">
-    <meta property="og:title" content="Cleaning Services in Lowell, MA &amp; Massachusetts | SGM Clean Solutions" data-i18n-content="meta.title">
-    <meta property="og:description" content="Professional residential, commercial and floor cleaning in Lowell and across Massachusetts. Request a free quote today." data-i18n-content="meta.ogDescription">
+    <meta property="og:title" content="Floor Care &amp; Cleaning Services in Lowell, MA | SGM Clean Solutions" data-i18n-content="meta.title">
+    <meta property="og:description" content="Floor care specialists in Lowell, MA: stripping &amp; waxing, burnishing, carpet and tile care, plus complete cleaning. Free quote." data-i18n-content="meta.ogDescription">
     <meta property="og:url" content="https://sgmlcleansolutions.com/">
     <meta property="og:image" content="https://sgmlcleansolutions.com/assets/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -47,8 +47,8 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="es_US">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cleaning Services in Lowell, MA &amp; Massachusetts | SGM Clean Solutions">
-    <meta name="twitter:description" content="Professional residential, commercial and floor cleaning in Lowell and across Massachusetts. Request a free quote today.">
+    <meta name="twitter:title" content="Floor Care &amp; Cleaning Services in Lowell, MA | SGM Clean Solutions">
+    <meta name="twitter:description" content="Floor care specialists in Lowell, MA: stripping &amp; waxing, burnishing, carpet and tile care, plus complete cleaning. Free quote.">
     <meta name="twitter:image" content="https://sgmlcleansolutions.com/assets/og-image.jpg">
 
     <!-- Icons -->
@@ -65,12 +65,12 @@
         "@type": "LocalBusiness",
         "@id": "https://sgmlcleansolutions.com/#business",
         "name": "SGM Clean Solutions",
-        "description": "Professional residential, commercial, office and floor cleaning, floor stripping and waxing, and snow removal services in Lowell and across Massachusetts.",
+        "description": "Floor care specialists in Lowell, MA: floor stripping and waxing, buffing and burnishing, deep scrub and recoat, carpet and tile care, plus commercial and residential cleaning and snow removal across Massachusetts.",
         "url": "https://sgmlcleansolutions.com/",
         "logo": "https://sgmlcleansolutions.com/assets/icon-512.png",
         "image": "https://sgmlcleansolutions.com/assets/og-image.jpg",
         "telephone": "+1-954-245-1566",
-        "email": "info@sgmlcleansolutions.com",
+        "email": "cleaningsgm@gmail.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "86 Agawam St",
@@ -81,6 +81,12 @@
         },
         "areaServed": [
             { "@type": "City", "name": "Lowell, MA" },
+            { "@type": "City", "name": "Dracut, MA" },
+            { "@type": "City", "name": "Chelmsford, MA" },
+            { "@type": "City", "name": "Tewksbury, MA" },
+            { "@type": "City", "name": "Billerica, MA" },
+            { "@type": "City", "name": "Lawrence, MA" },
+            { "@type": "City", "name": "Andover, MA" },
             { "@type": "City", "name": "Boston, MA" },
             { "@type": "City", "name": "Cambridge, MA" },
             { "@type": "City", "name": "Worcester, MA" },
@@ -95,10 +101,15 @@
         ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Cleaning services",
+            "name": "Floor care and cleaning services",
             "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floor Stripping and Waxing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floor Buffing and Burnishing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deep Scrub and Recoat" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Carpet Deep Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tile and Grout Cleaning" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floor Maintenance Plans" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Office Cleaning" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floor Stripping, Waxing and Carpet Cleaning" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apartment and Condominium Cleaning" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential House Cleaning" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Cleaning" } },
@@ -136,18 +147,17 @@
                 </button>
                 <ul id="nav-menu">
                     <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                    <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="#floor-care" data-i18n="nav.floorCare">Floor Care</a></li>
                     <li><a href="#services" data-i18n="nav.services">Services</a></li>
-                    <li><a href="#offers" data-i18n="nav.offers">Offers</a></li>
-                    <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-                    <li><a href="cleaning-services-massachusetts/" data-i18n="nav.tips" data-lang-link>Cleaning Tips</a></li>
+                    <li><a href="#work" data-i18n="nav.gallery">Our Work</a></li>
+                    <li><a href="#testimonials" data-i18n="nav.testimonials">Reviews</a></li>
+                    <li><a href="#area" data-i18n="nav.area">Service Area</a></li>
                     <li><a href="#quote" class="nav-cta" data-i18n="nav.quote">Free Quote</a></li>
-                    <li class="language-item">
-                        <label for="language-selector" class="visually-hidden" data-i18n="common.language">Language</label>
-                        <select id="language-selector">
-                            <option value="en" selected>English</option>
-                            <option value="es">Español</option>
-                        </select>
+                    <li class="lang-item">
+                        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+                            <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+                            <button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -156,16 +166,55 @@
 
     <main id="main">
         <section id="home" class="hero">
-            <video autoplay muted loop playsinline preload="metadata" class="hero-video" poster="assets/hero-poster.jpg" aria-hidden="true">
-                <source src="assets/banner.mp4" type="video/mp4">
-            </video>
+            <div class="hero-media">
+                <video autoplay muted loop playsinline preload="metadata" class="hero-video" poster="assets/hero-poster.jpg" aria-hidden="true">
+                    <source src="assets/banner.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="container hero-overlay">
-                <h1 data-i18n="hero.title">Professional Cleaning &amp; Floor Care Services in Lowell and Massachusetts</h1>
-                <p data-i18n="hero.subtitle">Residential, commercial and office cleaning, floor stripping &amp; waxing and snow removal — done right, on schedule.</p>
+                <p class="eyebrow" data-i18n="hero.eyebrow">Floor care specialists · Lowell, MA</p>
+                <h1 data-i18n="hero.title">Floors that shine like new, across Massachusetts</h1>
+                <p class="hero-sub" data-i18n="hero.subtitle">Stripping &amp; waxing, buffing, deep scrubbing and carpet care for offices, schools, stores and homes — plus complete cleaning and snow removal.</p>
                 <div class="hero-actions">
-                    <a href="#quote" class="cta-button" data-i18n="hero.cta">Get a Free Quote</a>
-                    <a href="cleaning-services-massachusetts/" class="cta-button cta-secondary" data-i18n="hero.tips" data-lang-link>Free Cleaning Tips</a>
+                    <a href="#quote" class="cta-button" data-i18n="hero.cta">Get a Free Floor Quote</a>
+                    <a href="gallery/" class="cta-button cta-secondary" data-i18n="hero.gallery" data-lang-link>See Our Work</a>
                 </div>
+                <ul class="hero-badges">
+                    <li data-i18n="hero.b1">Insured &amp; trained crew</li>
+                    <li data-i18n="hero.b2">Nights &amp; weekends available</li>
+                    <li data-i18n="hero.b3">English &amp; Spanish</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="floor-care" class="floor-care" aria-labelledby="floor-title">
+            <div class="container">
+                <div class="floor-grid">
+                    <div class="floor-media">
+                        <img src="assets/floor-stripping-waxing-massachusetts.jpg" alt="Floor stripping and waxing machine on a commercial floor" data-i18n-alt="floor.alt" width="900" height="601" loading="lazy" decoding="async">
+                        <span class="floor-tag" data-i18n="floor.tag">Our specialty</span>
+                    </div>
+                    <div class="floor-text">
+                        <p class="eyebrow" data-i18n="floor.eyebrow">Specialized floor care</p>
+                        <h2 id="floor-title" data-i18n="floor.title">Professional floor care for every surface</h2>
+                        <p data-i18n="floor.intro">VCT, vinyl, tile, concrete, hardwood and carpet: we restore worn floors and keep them protected with the right products and commercial equipment.</p>
+                        <ul class="floor-list">
+                            <li><strong data-i18n="floor.l1.t">Strip &amp; wax</strong><span data-i18n="floor.l1.d">Remove old finish and lay fresh coats for a deep, lasting shine.</span></li>
+                            <li><strong data-i18n="floor.l2.t">Buffing &amp; burnishing</strong><span data-i18n="floor.l2.d">High-speed polish that brings back gloss between waxings.</span></li>
+                            <li><strong data-i18n="floor.l3.t">Deep scrub &amp; recoat</strong><span data-i18n="floor.l3.d">Lift embedded dirt and refresh the finish without a full strip.</span></li>
+                            <li><strong data-i18n="floor.l4.t">Carpet deep cleaning</strong><span data-i18n="floor.l4.d">Hot-water extraction that removes stains, odors and allergens.</span></li>
+                            <li><strong data-i18n="floor.l5.t">Tile &amp; grout</strong><span data-i18n="floor.l5.d">Scrubbing and sealing that keeps grout lines clean.</span></li>
+                            <li><strong data-i18n="floor.l6.t">Maintenance plans</strong><span data-i18n="floor.l6.d">Scheduled visits so your floors always look their best.</span></li>
+                        </ul>
+                        <a href="#quote" class="cta-button" data-i18n="floor.cta">Quote my floors</a>
+                    </div>
+                </div>
+                <ol class="floor-steps">
+                    <li><span>1</span><strong data-i18n="floor.s1.t">Inspect</strong><p data-i18n="floor.s1.d">We check the floor type, wear and traffic.</p></li>
+                    <li><span>2</span><strong data-i18n="floor.s2.t">Strip &amp; clean</strong><p data-i18n="floor.s2.d">Old finish and buildup come off.</p></li>
+                    <li><span>3</span><strong data-i18n="floor.s3.t">Finish &amp; protect</strong><p data-i18n="floor.s3.d">New wax or sealer, then burnished.</p></li>
+                    <li><span>4</span><strong data-i18n="floor.s4.t">Maintain</strong><p data-i18n="floor.s4.d">A plan that keeps the shine.</p></li>
+                </ol>
             </div>
         </section>
 
@@ -192,7 +241,7 @@
 
         <section id="services">
             <div class="container">
-                <h2 data-i18n="services.title">Our Cleaning Services in Massachusetts</h2>
+                <h2 data-i18n="services.title">More Cleaning Services in Massachusetts</h2>
                 <p class="section-intro" data-i18n="services.intro">From daily office cleaning to floor restoration and winter snow removal, we serve Lowell, Boston, Cambridge, Worcester, Springfield and surrounding Massachusetts communities.</p>
                 <div class="service-grid">
                     <article class="service-item">
@@ -202,15 +251,6 @@
                             <li data-i18n="services.office.i1">🫧 Daily and weekly cleaning</li>
                             <li data-i18n="services.office.i2">🫧 Deep disinfection</li>
                             <li data-i18n="services.office.i3">🫧 Customized cleaning plans</li>
-                        </ul>
-                    </article>
-                    <article class="service-item">
-                        <img src="assets/floor-stripping-waxing-massachusetts.jpg" alt="Floor stripping and waxing in Massachusetts" data-i18n-alt="services.floors.alt" width="900" height="601" loading="lazy" decoding="async">
-                        <h3 data-i18n="services.floors.title">Specialized Floor Care</h3>
-                        <ul>
-                            <li data-i18n="services.floors.i1">🫧 Floor stripping and waxing</li>
-                            <li data-i18n="services.floors.i2">🫧 Deep carpet cleaning</li>
-                            <li data-i18n="services.floors.i3">🫧 Surface care and maintenance</li>
                         </ul>
                     </article>
                     <article class="service-item">
@@ -250,6 +290,22 @@
                         </ul>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="work" class="work" aria-labelledby="work-title">
+            <div class="container">
+                <p class="eyebrow center" data-i18n="work.eyebrow">Our work</p>
+                <h2 id="work-title" data-i18n="work.title">Photos &amp; videos of real jobs</h2>
+                <p class="section-intro" data-i18n="work.intro">Before-and-after results from floors, offices and homes we take care of in Lowell and across Massachusetts.</p>
+                <ul class="work-grid">
+                    <li class="wide"><a href="gallery/" data-lang-link class="work-item is-video"><img src="assets/hero-poster.jpg" alt="Floor machine burnishing a commercial floor (video)" loading="lazy" width="1206" height="805"><span class="play" aria-hidden="true"></span><span class="work-cap" data-i18n="work.c1">Burnishing · Commercial floor</span></a></li>
+                    <li><a href="gallery/" data-lang-link class="work-item"><img src="assets/floor-stripping-waxing-massachusetts.jpg" alt="Floor stripping in progress" loading="lazy" width="900" height="601"><span class="work-cap" data-i18n="work.c2">Strip &amp; wax</span></a></li>
+                    <li><a href="gallery/" data-lang-link class="work-item"><img src="assets/office-cleaning-massachusetts.jpg" alt="Office cleaning by the SGM crew" loading="lazy" width="900" height="600"><span class="work-cap" data-i18n="work.c3">Office cleaning</span></a></li>
+                    <li><a href="gallery/" data-lang-link class="work-item"><img src="assets/commercial-cleaning-massachusetts.jpg" alt="Commercial space cleaning" loading="lazy" width="900" height="600"><span class="work-cap" data-i18n="work.c4">Commercial</span></a></li>
+                    <li><a href="gallery/" data-lang-link class="work-item"><img src="assets/residential-house-cleaning-lowell-ma.jpg" alt="Residential cleaning in Lowell" loading="lazy" width="900" height="708"><span class="work-cap" data-i18n="work.c5">Residential</span></a></li>
+                </ul>
+                <div class="center"><a href="gallery/" class="cta-button" data-i18n="work.cta" data-lang-link>Open the full gallery</a></div>
             </div>
         </section>
 
@@ -335,6 +391,25 @@
             </div>
         </section>
 
+        <section id="area" class="area" aria-labelledby="area-title">
+            <div class="container area-grid">
+                <div class="area-text">
+                    <p class="eyebrow" data-i18n="area.eyebrow">Service area</p>
+                    <h2 id="area-title" data-i18n="area.title">Based in Lowell, serving all of Massachusetts</h2>
+                    <p data-i18n="area.intro">Our crew travels with commercial floor equipment to Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester and nearby towns.</p>
+                    <address class="area-address">
+                        <strong>SGM Clean Solutions</strong><br>
+                        86 Agawam St, Lowell, MA<br>
+                        <a href="tel:+19542451566">+1 (954) 245-1566</a> · <a href="mailto:cleaningsgm@gmail.com">cleaningsgm@gmail.com</a>
+                    </address>
+                    <a href="https://maps.app.goo.gl/XUufZ51goBra3DHv9" class="cta-button cta-secondary" target="_blank" rel="noopener noreferrer" data-i18n="area.directions">Open in Google Maps</a>
+                </div>
+                <div class="area-map">
+                    <iframe title="Map: SGM Clean Solutions, 86 Agawam St, Lowell, MA" src="https://www.google.com/maps?q=86+Agawam+St,+Lowell,+MA&amp;z=13&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
         <section id="quote">
             <div class="container">
                 <h2 data-i18n="quote.title">Request a Free Quote</h2>
@@ -401,7 +476,7 @@
                     <h2 class="footer-title" data-i18n="footer.contact">Contact</h2>
                     <address>
                         <p><span data-i18n="footer.phone">Phone:</span> <a href="tel:+19542451566">+1 (954) 245-1566</a></p>
-                        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:info@sgmlcleansolutions.com">info@sgmlcleansolutions.com</a></p>
+                        <p><span data-i18n="footer.email">Email:</span> <a href="mailto:cleaningsgm@gmail.com">cleaningsgm@gmail.com</a></p>
                         <p><span data-i18n="footer.address">Address:</span> 86 Agawam St, Lowell, MA</p>
                     </address>
                 </div>
@@ -410,9 +485,10 @@
                     <ul>
                         <li><a href="#home" data-i18n="nav.home">Home</a></li>
                         <li><a href="#services" data-i18n="nav.services">Services</a></li>
-                        <li><a href="#offers" data-i18n="nav.offers">Offers</a></li>
+                        <li><a href="#floor-care" data-i18n="nav.floorCare">Floor Care</a></li>
                         <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-                        <li><a href="cleaning-services-massachusetts/" data-i18n="nav.tips" data-lang-link>Cleaning Tips</a></li>
+                        <li><a href="gallery/" data-i18n="nav.gallery" data-lang-link>Our Work</a></li>
+                        <li><a href="#area" data-i18n="nav.area">Service Area</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

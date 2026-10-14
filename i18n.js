@@ -107,8 +107,9 @@
 
         updateUrlState(lang);
 
-        const selector = document.getElementById('language-selector');
-        if (selector) selector.value = lang;
+        document.querySelectorAll('.lang-switch [data-lang]').forEach(btn => {
+            btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
+        });
 
         listeners.forEach(fn => fn(lang));
     }
@@ -129,13 +130,12 @@
     };
 
     document.addEventListener('DOMContentLoaded', function () {
-        const selector = document.getElementById('language-selector');
-        if (selector) {
-            selector.addEventListener('change', function (e) {
-                apply(e.target.value);
+        document.querySelectorAll('.lang-switch [data-lang]').forEach(btn => {
+            btn.addEventListener('click', function () {
+                apply(btn.dataset.lang);
                 storageSet(current);
             });
-        }
+        });
         // Page scripts register their listeners on DOMContentLoaded too; apply
         // the language right after them.
         setTimeout(() => apply(initialLanguage()), 0);

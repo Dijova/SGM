@@ -20,7 +20,7 @@ Static website for **SGM Clean Solutions** (cleaning, floor care and snow remova
 | File | Purpose |
 |------|---------|
 | `index.html` | Home page (English). Translatable elements use `data-i18n*` attributes. |
-| `cleaning-services-massachusetts/` | Cleaning tips page (`index.html`, `tips.css`, `tips.js`). |
+| `gallery/` | Photo & video gallery of real jobs (`index.html`, `gallery.js`). To add media: copy the file to `assets/`, add an `<li>` to `#gallery-grid` with a descriptive `alt`, and list it in `sitemap.xml` and the page JSON-LD for SEO. |
 | `translations.js` | English and Spanish texts for every page. |
 | `i18n.js` | Shared language switching (URL, canonical, internal links). |
 | `config.js` | Form endpoint URL and optional Cloudflare Turnstile site key. |

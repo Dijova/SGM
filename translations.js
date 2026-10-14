@@ -14,9 +14,9 @@
 window.SGM_TRANSLATIONS = {
     en: {
         meta: {
-            title: 'Cleaning Services in Lowell, MA & Massachusetts | SGM Clean Solutions',
-            description: 'SGM Clean Solutions offers professional residential, commercial, office and floor cleaning, stripping & waxing and snow removal in Lowell and across Massachusetts. Request a free quote today.',
-            ogDescription: 'Professional residential, commercial and floor cleaning in Lowell and across Massachusetts. Request a free quote today.'
+            title: 'Floor Care & Cleaning Services in Lowell, MA | SGM Clean Solutions',
+            description: 'Floor stripping & waxing, buffing, burnishing, deep scrub & recoat, carpet and tile care in Lowell and across Massachusetts, plus commercial, residential cleaning and snow removal. Free quote.',
+            ogDescription: 'Floor care specialists in Lowell, MA: stripping & waxing, burnishing, carpet and tile care, plus complete cleaning. Free quote.'
         },
         common: {
             skip: 'Skip to content',
@@ -28,15 +28,79 @@ window.SGM_TRANSLATIONS = {
             about: 'About Us',
             services: 'Services',
             offers: 'Offers',
-            testimonials: 'Testimonials',
-            tips: 'Cleaning Tips',
+            testimonials: 'Reviews',
+            floorCare: 'Floor Care',
+            gallery: 'Our Work',
+            area: 'Service Area',
             quote: 'Free Quote'
         },
         hero: {
-            title: 'Professional Cleaning & Floor Care Services in Lowell and Massachusetts',
-            subtitle: 'Residential, commercial and office cleaning, floor stripping & waxing and snow removal — done right, on schedule.',
-            cta: 'Get a Free Quote',
-            tips: 'Free Cleaning Tips'
+            eyebrow: 'Floor care specialists · Lowell, MA',
+            title: 'Floors that shine like new, across Massachusetts',
+            subtitle: 'Stripping & waxing, buffing, deep scrubbing and carpet care for offices, schools, stores and homes — plus complete cleaning and snow removal.',
+            cta: 'Get a Free Floor Quote',
+            gallery: 'See Our Work',
+            b1: 'Insured & trained crew',
+            b2: 'Nights & weekends available',
+            b3: 'English & Spanish'
+        },
+        floor: {
+            alt: 'Floor stripping and waxing machine on a commercial floor',
+            tag: 'Our specialty',
+            eyebrow: 'Specialized floor care',
+            title: 'Professional floor care for every surface',
+            intro: 'VCT, vinyl, tile, concrete, hardwood and carpet: we restore worn floors and keep them protected with the right products and commercial equipment.',
+            l1: { t: 'Strip & wax', d: 'Remove old finish and lay fresh coats for a deep, lasting shine.' },
+            l2: { t: 'Buffing & burnishing', d: 'High-speed polish that brings back gloss between waxings.' },
+            l3: { t: 'Deep scrub & recoat', d: 'Lift embedded dirt and refresh the finish without a full strip.' },
+            l4: { t: 'Carpet deep cleaning', d: 'Hot-water extraction that removes stains, odors and allergens.' },
+            l5: { t: 'Tile & grout', d: 'Scrubbing and sealing that keeps grout lines clean.' },
+            l6: { t: 'Maintenance plans', d: 'Scheduled visits so your floors always look their best.' },
+            cta: 'Quote my floors',
+            s1: { t: 'Inspect', d: 'We check the floor type, wear and traffic.' },
+            s2: { t: 'Strip & clean', d: 'Old finish and buildup come off.' },
+            s3: { t: 'Finish & protect', d: 'New wax or sealer, then burnished.' },
+            s4: { t: 'Maintain', d: 'A plan that keeps the shine.' }
+        },
+        work: {
+            eyebrow: 'Our work',
+            title: 'Photos & videos of real jobs',
+            intro: 'Before-and-after results from floors, offices and homes we take care of in Lowell and across Massachusetts.',
+            c1: 'Burnishing · Commercial floor',
+            c2: 'Strip & wax',
+            c3: 'Office cleaning',
+            c4: 'Commercial',
+            c5: 'Residential',
+            cta: 'Open the full gallery'
+        },
+        area: {
+            eyebrow: 'Service area',
+            title: 'Based in Lowell, serving all of Massachusetts',
+            intro: 'Our crew travels with commercial floor equipment to Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester and nearby towns.',
+            directions: 'Open in Google Maps'
+        },
+        g: {
+            meta: { title: 'Floor Care & Cleaning Gallery: Real Jobs in Lowell, MA | SGM Clean Solutions', description: 'Photos and videos of floor stripping & waxing, burnishing, carpet and tile care and cleaning jobs by SGM Clean Solutions in Lowell and across Massachusetts.', og: 'Real floor stripping, waxing, burnishing and cleaning jobs in Lowell and across Massachusetts.' },
+            title: 'Floor care & cleaning gallery in Massachusetts',
+            intro: 'Real jobs by the SGM crew: stripped and waxed floors, burnished hallways, offices, homes and winter snow removal across Massachusetts.',
+            filter: 'Filter gallery',
+            f: { all: 'All', floors: 'Floor care', video: 'Videos', commercial: 'Commercial', residential: 'Residential', snow: 'Snow removal' },
+            i1: 'Burnishing · Commercial floor', i2: 'Strip & wax · Lowell', i3: 'Office cleaning', i4: 'Commercial cleaning', i5: 'Residential · Lowell', i6: 'Apartments & condos', i7: 'Our crew', i8: 'Snow removal',
+            a1: 'Floor machine burnishing a commercial floor in Massachusetts', a2: 'Floor stripping and waxing on a commercial floor in Lowell, MA', a3: 'SGM crew cleaning and disinfecting office desks in Massachusetts', a4: 'Restaurant tables sanitized during a commercial cleaning visit', a5: 'Residential house cleaning in Lowell, MA', a6: 'Apartment and condominium common areas maintained in Massachusetts', a7: 'SGM Clean Solutions floor care and cleaning crew', a8: 'Snow blower clearing a driveway in Lowell, MA',
+            cta: { text: 'Want your floors to look like this?', ig: 'More on Instagram' },
+            seo: {
+                title: 'Floor care projects in Lowell and across Massachusetts',
+                p1: 'Every photo and video in this gallery comes from a real job by SGM Clean Solutions. We strip and wax VCT and vinyl floors, burnish hallways and lobbies, deep scrub and recoat high-traffic areas, extract carpets and clean and seal tile and grout for offices, schools, stores, restaurants, apartment buildings and homes.',
+                h1: 'Commercial floor stripping & waxing',
+                t1: 'We remove old finish and buildup, then lay new coats of floor finish and burnish them for a durable, high-gloss result, scheduled at night or on weekends so your business keeps running.',
+                h2: 'Buffing, burnishing & scrub-and-recoat',
+                t2: 'Between full strips, regular burnishing and scrub-and-recoat visits restore shine and extend the life of the finish at a lower cost.',
+                h3: 'Carpet, tile & grout care',
+                t3: 'Hot-water carpet extraction and tile and grout scrubbing and sealing remove stains, odors and embedded dirt from homes and commercial spaces.',
+                areas: 'Service area: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester and nearby Massachusetts towns.',
+                l1: 'See our floor care services',
+                l2: 'Request a free floor quote'
+            }
         },
         about: {
             title: 'About SGM Clean Solutions',
@@ -49,7 +113,7 @@ window.SGM_TRANSLATIONS = {
             imageAlt: 'SGM Clean Solutions professional cleaning team in Massachusetts'
         },
         services: {
-            title: 'Our Cleaning Services in Massachusetts',
+            title: 'More Cleaning Services in Massachusetts',
             intro: 'From daily office cleaning to floor restoration and winter snow removal, we serve Lowell, Boston, Cambridge, Worcester, Springfield and surrounding Massachusetts communities.',
             office: {
                 alt: 'Office cleaning service in Massachusetts',
@@ -164,95 +228,14 @@ window.SGM_TRANSLATIONS = {
             links: 'Quick Links',
             follow: 'Follow Us',
             rights: 'All rights reserved.'
-        },
-        tips: {
-            meta: {
-                title: 'Professional Cleaning Tips for Massachusetts Homes & Offices | SGM Clean Solutions',
-                description: 'Expert cleaning tips for homes and businesses in Massachusetts: benefits of professional cleaning, floor care by material and common office cleaning mistakes. By SGM Clean Solutions, Lowell, MA.',
-                ogTitle: 'Professional Cleaning Tips for Massachusetts Homes & Offices',
-                ogDescription: 'Benefits of professional cleaning, floor care by material and common office cleaning mistakes — expert advice from SGM Clean Solutions.'
-            },
-            back: 'Back to main website',
-            hero: {
-                title: '🧽 Professional Cleaning Tips for Massachusetts Homes & Offices',
-                subtitle: 'Expert advice from SGM Clean Solutions',
-                cta: 'Visit Our Main Website'
-            },
-            intro: {
-                title: '🎯 Professional Cleaning Services in Massachusetts',
-                text: 'Practical cleaning guides for homes, offices and businesses in Lowell, Boston, Worcester, Springfield, Cambridge and the rest of Massachusetts, written by the SGM Clean Solutions team.'
-            },
-            a1: {
-                title: '5 Benefits of Hiring Professional Cleaning Services for Your Home or Business in Massachusetts',
-                intro: 'Maintaining a clean and healthy space can be challenging, especially when daily responsibilities leave little time. In homes and offices alike, professional cleaning has become a necessity, not just for comfort, but for health and efficiency. Here are the main benefits of hiring professional cleaning services in Massachusetts.',
-                h1: 'Time and Effort Savings',
-                p1: 'Delegating cleaning to experts allows you to focus on your personal or work priorities. Professionals complete tasks quickly and efficiently without compromising quality.',
-                h2: 'Specialized Equipment and Products',
-                p2: 'SGM Clean Solutions uses modern machinery and professional-grade products suited to each type of surface, guaranteeing results that cannot be achieved with household cleaning.',
-                h3: 'Improved Health and Hygiene',
-                p3: 'Professional cleaning reduces allergens, bacteria and viruses. This is especially important in homes with children, seniors or people with allergies, as well as in high-traffic offices.',
-                h4: 'Specialized Care for Each Floor Type',
-                p4: 'Floors are one of the most delicate surfaces, and the wrong products can damage them. We use the right technique for each material: wood, ceramic, marble or vinyl.',
-                h5: 'Higher Perceived Value of Your Space',
-                p5: 'A clean space projects professionalism and care. Whether it is a business serving clients or a home you want to show or rent, professional cleaning makes a better impression.',
-                ctaText: '🔹 Ready to improve your space?',
-                cta: 'Get a Free Quote Today'
-            },
-            a2: {
-                title: 'How to Keep Your Floors Clean and Shiny Between Professional Cleanings',
-                intro: 'Floors are the visual foundation of any space. However, keeping them spotless between deep cleanings can be complicated. Here are some practical tips to keep them looking great without damaging them.',
-                h1: 'Wood Floor Care',
-                l1a: 'Use a dry or barely damp microfiber mop',
-                l1b: 'Avoid excess water (it can make the wood swell)',
-                l1c: 'Use neutral cleaners made for wood',
-                l1d: 'Place mats at entrances to keep dirt out',
-                h2: 'Ceramic or Porcelain Floor Care',
-                l2a: 'Sweep or vacuum frequently to remove debris',
-                l2b: 'Use warm water with a neutral detergent',
-                l2c: 'Avoid highly acidic cleaners that dull the shine',
-                h3: 'Vinyl or Laminate Floors',
-                l3a: 'Do not use steam',
-                l3b: 'Use gentle products applied with a damp cloth',
-                l3c: 'Do not drag furniture without protection',
-                h4: 'What to Avoid in All Cases',
-                l4a: 'Abrasive products (like undiluted bleach)',
-                l4b: 'Hard brushes or metal sponges',
-                l4c: 'Excess water or prolonged moisture',
-                h5: 'Recommended Frequency',
-                p5: 'Do a light cleaning daily in high-traffic areas and a deep cleaning at least once a month with a professional service.',
-                ctaText: '🔹 Your floors no longer shine like before?',
-                cta: 'Schedule Professional Floor Cleaning'
-            },
-            a3: {
-                title: 'Common Office Cleaning Mistakes and How to Avoid Them (Especially When Receiving Clients)',
-                intro: "Office cleaning goes beyond wiping surfaces: it is a key part of your company's image. However, many businesses make mistakes that affect health, order and how professional the place looks. Here are the most frequent ones and how to avoid them.",
-                h1: 'Using the Wrong Products',
-                p1: 'Each surface requires a specific product. Using disinfectants on desks without knowing their composition can damage them or leave residue. The same applies to floors and bathrooms.',
-                h2: 'Ignoring "Invisible" Areas',
-                p2: 'Switches, handles, keyboards, phones and the areas under desks are often overlooked, but they accumulate bacteria and affect hygiene.',
-                h3: 'Cleaning Only When Dirt Is Visible',
-                p3: 'Preventive cleaning avoids build-up, odors and the spread of germs. Waiting until dirt is visible is a reactive and inefficient approach.',
-                h4: 'No Professional Cleaning Routine',
-                p4: 'General tidying by office staff does not replace a professional service. Without the right equipment or training, time is wasted and deep results are not guaranteed.',
-                h5: 'No Cleaning Checklist',
-                p5: 'A structured protocol prevents omissions. Professional companies like SGM Clean Solutions work with validated checklists to ensure complete coverage of the space.',
-                ctaText: '🔹 Your office deserves an impeccable image.',
-                cta: 'Ask About Our Business Plans'
-            },
-            contact: {
-                title: 'Ready for Professional Cleaning in Massachusetts? 🌟',
-                text: 'Contact SGM Clean Solutions today for a free consultation and quote!',
-                call: 'Call Now',
-                email: 'Email Us'
-            }
         }
     },
 
     es: {
         meta: {
-            title: 'Servicios de Limpieza en Lowell, MA y Massachusetts | SGM Clean Solutions',
-            description: 'SGM Clean Solutions ofrece limpieza profesional residencial, comercial, de oficinas y de pisos, decapado y encerado, y remoción de nieve en Lowell y todo Massachusetts. Solicite una cotización gratuita.',
-            ogDescription: 'Limpieza profesional residencial, comercial y de pisos en Lowell y todo Massachusetts. Solicite una cotización gratuita.'
+            title: 'Cuidado de Pisos y Limpieza en Lowell, MA | SGM Clean Solutions',
+            description: 'Decapado y encerado, pulido, abrillantado, fregado profundo y recapa, alfombras y cerámica en Lowell y todo Massachusetts, además de limpieza comercial, residencial y remoción de nieve. Cotización gratis.',
+            ogDescription: 'Especialistas en pisos en Lowell, MA: decapado y encerado, abrillantado, alfombras y cerámica, y limpieza completa. Cotización gratis.'
         },
         common: {
             skip: 'Saltar al contenido',
@@ -264,15 +247,79 @@ window.SGM_TRANSLATIONS = {
             about: 'Nosotros',
             services: 'Servicios',
             offers: 'Ofertas',
-            testimonials: 'Testimonios',
-            tips: 'Consejos de Limpieza',
+            testimonials: 'Reseñas',
+            floorCare: 'Pisos',
+            gallery: 'Trabajos',
+            area: 'Cobertura',
             quote: 'Cotización Gratis'
         },
         hero: {
-            title: 'Servicios Profesionales de Limpieza y Cuidado de Pisos en Lowell y Massachusetts',
-            subtitle: 'Limpieza residencial, comercial y de oficinas, decapado y encerado de pisos y remoción de nieve: bien hecho y a tiempo.',
-            cta: 'Cotización Gratuita',
-            tips: 'Consejos de Limpieza Gratis'
+            eyebrow: 'Especialistas en pisos · Lowell, MA',
+            title: 'Pisos que brillan como nuevos en todo Massachusetts',
+            subtitle: 'Decapado y encerado, pulido, fregado profundo y limpieza de alfombras para oficinas, escuelas, tiendas y hogares, además de limpieza completa y remoción de nieve.',
+            cta: 'Cotiza tus Pisos Gratis',
+            gallery: 'Ver Nuestros Trabajos',
+            b1: 'Equipo asegurado y capacitado',
+            b2: 'Noches y fines de semana',
+            b3: 'Inglés y español'
+        },
+        floor: {
+            alt: 'Máquina de decapado y encerado sobre un piso comercial',
+            tag: 'Nuestra especialidad',
+            eyebrow: 'Cuidado especializado de pisos',
+            title: 'Cuidado profesional para cada tipo de piso',
+            intro: 'VCT, vinilo, cerámica, concreto, madera y alfombra: restauramos pisos desgastados y los mantenemos protegidos con los productos adecuados y equipo comercial.',
+            l1: { t: 'Decapado y encerado', d: 'Retiramos el acabado viejo y aplicamos capas nuevas para un brillo profundo y duradero.' },
+            l2: { t: 'Pulido y abrillantado', d: 'Pulido a alta velocidad que recupera el brillo entre enceradas.' },
+            l3: { t: 'Fregado profundo y recapa', d: 'Saca la suciedad incrustada y renueva el acabado sin decapar.' },
+            l4: { t: 'Limpieza profunda de alfombras', d: 'Extracción con agua caliente que elimina manchas, olores y alérgenos.' },
+            l5: { t: 'Cerámica y juntas', d: 'Fregado y sellado que mantiene limpias las juntas.' },
+            l6: { t: 'Planes de mantenimiento', d: 'Visitas programadas para que tus pisos siempre luzcan bien.' },
+            cta: 'Cotizar mis pisos',
+            s1: { t: 'Inspección', d: 'Revisamos el tipo de piso, el desgaste y el tráfico.' },
+            s2: { t: 'Decapado y limpieza', d: 'Retiramos el acabado viejo y la suciedad acumulada.' },
+            s3: { t: 'Acabado y protección', d: 'Cera o sellador nuevo, y después abrillantado.' },
+            s4: { t: 'Mantenimiento', d: 'Un plan que conserva el brillo.' }
+        },
+        work: {
+            eyebrow: 'Nuestros trabajos',
+            title: 'Fotos y videos de trabajos reales',
+            intro: 'Resultados de antes y después en pisos, oficinas y hogares que atendemos en Lowell y todo Massachusetts.',
+            c1: 'Abrillantado · Piso comercial',
+            c2: 'Decapado y encerado',
+            c3: 'Limpieza de oficinas',
+            c4: 'Comercial',
+            c5: 'Residencial',
+            cta: 'Ver la galería completa'
+        },
+        area: {
+            eyebrow: 'Zona de servicio',
+            title: 'Desde Lowell, atendemos todo Massachusetts',
+            intro: 'Nuestro equipo viaja con maquinaria comercial para pisos a Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester y pueblos cercanos.',
+            directions: 'Abrir en Google Maps'
+        },
+        g: {
+            meta: { title: 'Galería de Pisos y Limpieza: Trabajos Reales en Lowell, MA | SGM Clean Solutions', description: 'Fotos y videos de decapado y encerado, abrillantado, alfombras, cerámica y trabajos de limpieza de SGM Clean Solutions en Lowell y todo Massachusetts.', og: 'Trabajos reales de decapado, encerado, abrillantado y limpieza en Lowell y todo Massachusetts.' },
+            title: 'Galería de pisos y limpieza en Massachusetts',
+            intro: 'Trabajos reales del equipo SGM: pisos decapados y encerados, pasillos abrillantados, oficinas, hogares y remoción de nieve en todo Massachusetts.',
+            filter: 'Filtrar galería',
+            f: { all: 'Todo', floors: 'Pisos', video: 'Videos', commercial: 'Comercial', residential: 'Residencial', snow: 'Nieve' },
+            i1: 'Abrillantado · Piso comercial', i2: 'Decapado y encerado · Lowell', i3: 'Limpieza de oficinas', i4: 'Limpieza comercial', i5: 'Residencial · Lowell', i6: 'Apartamentos y condominios', i7: 'Nuestro equipo', i8: 'Remoción de nieve',
+            a1: 'Máquina abrillantando un piso comercial en Massachusetts', a2: 'Decapado y encerado de un piso comercial en Lowell, MA', a3: 'Equipo SGM limpiando y desinfectando escritorios de oficina en Massachusetts', a4: 'Mesas de restaurante desinfectadas en una limpieza comercial', a5: 'Limpieza residencial de una casa en Lowell, MA', a6: 'Áreas comunes de apartamentos y condominios en Massachusetts', a7: 'Equipo de cuidado de pisos y limpieza de SGM Clean Solutions', a8: 'Quitanieves limpiando una entrada en Lowell, MA',
+            cta: { text: '¿Quieres que tus pisos luzcan así?', ig: 'Más en Instagram' },
+            seo: {
+                title: 'Proyectos de cuidado de pisos en Lowell y todo Massachusetts',
+                p1: 'Cada foto y video de esta galería es de un trabajo real de SGM Clean Solutions. Decapamos y enceramos pisos VCT y de vinilo, abrillantamos pasillos y vestíbulos, hacemos fregado profundo y recapa en zonas de alto tráfico, limpiamos alfombras por extracción y limpiamos y sellamos cerámica y juntas en oficinas, escuelas, tiendas, restaurantes, edificios de apartamentos y hogares.',
+                h1: 'Decapado y encerado de pisos comerciales',
+                t1: 'Retiramos el acabado viejo y la suciedad acumulada, aplicamos capas nuevas de acabado y las abrillantamos para un resultado duradero y de alto brillo, en horario nocturno o de fin de semana para que tu negocio siga funcionando.',
+                h2: 'Pulido, abrillantado y fregado con recapa',
+                t2: 'Entre decapados completos, el abrillantado periódico y el fregado con recapa devuelven el brillo y alargan la vida del acabado a menor costo.',
+                h3: 'Alfombras, cerámica y juntas',
+                t3: 'La extracción con agua caliente y el fregado y sellado de cerámica y juntas eliminan manchas, olores y suciedad incrustada en hogares y espacios comerciales.',
+                areas: 'Zona de servicio: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester y pueblos cercanos de Massachusetts.',
+                l1: 'Ver nuestros servicios de pisos',
+                l2: 'Pedir cotización gratis de pisos'
+            }
         },
         about: {
             title: 'Sobre SGM Clean Solutions',
@@ -285,7 +332,7 @@ window.SGM_TRANSLATIONS = {
             imageAlt: 'Equipo profesional de limpieza de SGM Clean Solutions en Massachusetts'
         },
         services: {
-            title: 'Nuestros Servicios de Limpieza en Massachusetts',
+            title: 'Más Servicios de Limpieza en Massachusetts',
             intro: 'Desde la limpieza diaria de oficinas hasta la restauración de pisos y la remoción de nieve en invierno, atendemos Lowell, Boston, Cambridge, Worcester, Springfield y comunidades cercanas de Massachusetts.',
             office: {
                 alt: 'Servicio de limpieza de oficinas en Massachusetts',
@@ -400,87 +447,6 @@ window.SGM_TRANSLATIONS = {
             links: 'Enlaces Rápidos',
             follow: 'Síguenos',
             rights: 'Todos los derechos reservados.'
-        },
-        tips: {
-            meta: {
-                title: 'Consejos Profesionales de Limpieza para Hogares y Oficinas en Massachusetts | SGM Clean Solutions',
-                description: 'Consejos expertos de limpieza para hogares y negocios en Massachusetts: beneficios de la limpieza profesional, cuidado de pisos según el material y errores comunes en la limpieza de oficinas. Por SGM Clean Solutions, Lowell, MA.',
-                ogTitle: 'Consejos Profesionales de Limpieza para Hogares y Oficinas en Massachusetts',
-                ogDescription: 'Beneficios de la limpieza profesional, cuidado de pisos según el material y errores comunes en oficinas: consejos de SGM Clean Solutions.'
-            },
-            back: 'Volver al sitio principal',
-            hero: {
-                title: '🧽 Consejos Profesionales de Limpieza para Hogares y Oficinas en Massachusetts',
-                subtitle: 'Consejos expertos de SGM Clean Solutions',
-                cta: 'Visitar el Sitio Principal'
-            },
-            intro: {
-                title: '🎯 Servicios Profesionales de Limpieza en Massachusetts',
-                text: 'Guías prácticas de limpieza para hogares, oficinas y negocios en Lowell, Boston, Worcester, Springfield, Cambridge y el resto de Massachusetts, escritas por el equipo de SGM Clean Solutions.'
-            },
-            a1: {
-                title: '5 Beneficios de Contratar Servicios Profesionales de Limpieza para tu Hogar o Negocio en Massachusetts',
-                intro: 'Mantener un espacio limpio y saludable puede ser un desafío, sobre todo cuando las responsabilidades diarias dejan poco tiempo. Tanto en hogares como en oficinas, la limpieza profesional se ha convertido en una necesidad, no solo por comodidad, sino por salud y eficiencia. Estos son los principales beneficios de contratar servicios profesionales de limpieza en Massachusetts.',
-                h1: 'Ahorro de Tiempo y Esfuerzo',
-                p1: 'Delegar la limpieza a expertos te permite enfocarte en tus prioridades personales o laborales. Los profesionales realizan las tareas de forma rápida y eficiente sin sacrificar la calidad.',
-                h2: 'Equipos y Productos Especializados',
-                p2: 'SGM Clean Solutions utiliza maquinaria moderna y productos de grado profesional adecuados para cada tipo de superficie, garantizando resultados que no se logran con la limpieza doméstica.',
-                h3: 'Mejor Salud e Higiene',
-                p3: 'La limpieza profesional reduce alérgenos, bacterias y virus. Esto es especialmente importante en hogares con niños, adultos mayores o personas con alergias, y en oficinas con mucho tránsito.',
-                h4: 'Cuidado Especializado para Cada Tipo de Piso',
-                p4: 'Los pisos son una de las superficies más delicadas y los productos incorrectos pueden dañarlos. Usamos la técnica adecuada para cada material: madera, cerámica, mármol o vinilo.',
-                h5: 'Mayor Valor Percibido de tu Espacio',
-                p5: 'Un espacio limpio transmite profesionalismo y cuidado. Ya sea un negocio que atiende clientes o una vivienda que quieres mostrar o alquilar, la limpieza profesional causa una mejor impresión.',
-                ctaText: '🔹 ¿Listo para mejorar tu espacio?',
-                cta: 'Pide tu Cotización Gratis Hoy'
-            },
-            a2: {
-                title: 'Cómo Mantener tus Pisos Limpios y Brillantes entre Limpiezas Profesionales',
-                intro: 'Los pisos son la base visual de cualquier espacio. Sin embargo, mantenerlos impecables entre limpiezas profundas puede ser complicado. Aquí tienes algunos consejos prácticos para que luzcan bien sin dañarlos.',
-                h1: 'Cuidado de Pisos de Madera',
-                l1a: 'Usa un trapeador de microfibra seco o apenas húmedo',
-                l1b: 'Evita el exceso de agua (puede hinchar la madera)',
-                l1c: 'Usa limpiadores neutros específicos para madera',
-                l1d: 'Coloca tapetes en las entradas para evitar la suciedad',
-                h2: 'Cuidado de Pisos de Cerámica o Porcelanato',
-                l2a: 'Barre o aspira con frecuencia para eliminar residuos',
-                l2b: 'Usa agua tibia con detergente neutro',
-                l2c: 'Evita limpiadores muy ácidos que opacan el brillo',
-                h3: 'Pisos de Vinilo o Laminados',
-                l3a: 'No uses vapor',
-                l3b: 'Usa productos suaves aplicados con un paño húmedo',
-                l3c: 'No arrastres muebles sin protección',
-                h4: 'Qué Evitar en Todos los Casos',
-                l4a: 'Productos abrasivos (como cloro puro)',
-                l4b: 'Cepillos duros o esponjas metálicas',
-                l4c: 'Exceso de agua o humedad prolongada',
-                h5: 'Frecuencia Recomendada',
-                p5: 'Haz una limpieza superficial diaria en zonas de mucho tránsito y una limpieza profunda al menos una vez al mes con un servicio profesional.',
-                ctaText: '🔹 ¿Tus pisos ya no brillan como antes?',
-                cta: 'Agenda una Limpieza Profesional de Pisos'
-            },
-            a3: {
-                title: 'Errores Comunes en la Limpieza de Oficinas y Cómo Evitarlos (Sobre Todo al Recibir Clientes)',
-                intro: 'La limpieza de oficinas va más allá de pasar un paño: es una parte clave de la imagen de tu empresa. Sin embargo, muchos negocios cometen errores que afectan la salud, el orden y la imagen profesional del lugar. Estos son los más frecuentes y cómo evitarlos.',
-                h1: 'Usar Productos Incorrectos',
-                p1: 'Cada superficie requiere un producto específico. Usar desinfectantes en escritorios sin conocer su composición puede dañarlos o dejar residuos. Lo mismo aplica para pisos y baños.',
-                h2: 'Olvidar las Zonas "Invisibles"',
-                p2: 'Interruptores, manijas, teclados, teléfonos y la parte de abajo de los escritorios suelen pasarse por alto, pero acumulan bacterias y afectan la higiene.',
-                h3: 'Limpiar Solo Cuando se Ve la Suciedad',
-                p3: 'La limpieza preventiva evita acumulaciones, olores y la propagación de gérmenes. Esperar a ver la suciedad es un enfoque reactivo e ineficiente.',
-                h4: 'No Tener una Rutina de Limpieza Profesional',
-                p4: 'El orden general que hace el personal de la oficina no reemplaza un servicio profesional. Sin el equipo o la capacitación adecuados se pierde tiempo y no se garantizan resultados profundos.',
-                h5: 'No Tener una Lista de Verificación',
-                p5: 'Un protocolo estructurado evita omisiones. Empresas profesionales como SGM Clean Solutions trabajan con listas validadas para cubrir todo el espacio.',
-                ctaText: '🔹 Tu oficina merece una imagen impecable.',
-                cta: 'Conoce Nuestros Planes para Empresas'
-            },
-            contact: {
-                title: '¿Listo para una Limpieza Profesional en Massachusetts? 🌟',
-                text: '¡Contacta hoy a SGM Clean Solutions para una consulta y cotización gratuitas!',
-                call: 'Llamar Ahora',
-                email: 'Escríbenos'
-            }
         }
     }
 };
