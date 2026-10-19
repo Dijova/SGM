@@ -149,6 +149,7 @@ window.SGM_TRANSLATIONS = {
                 i3: '🫧 Driveway & sidewalk clearing'
             },
             junk: {
+                alt: 'SGML Clean Solutions junk removal truck serving Massachusetts and New Hampshire',
                 title: 'Junk Removal',
                 i1: '🫧 Furniture, appliance & debris haul-away',
                 i2: '🫧 Garage, basement & attic cleanouts',
@@ -359,6 +360,7 @@ window.SGM_TRANSLATIONS = {
                 i3: '🫧 Limpieza de entradas y aceras'
             },
             junk: {
+                alt: 'Camioneta de retiro de escombros de SGML Clean Solutions en Massachusetts y New Hampshire',
                 title: 'Retiro de Escombros (Junk Removal)',
                 i1: '🫧 Retiro de muebles, electrodomésticos y escombros',
                 i2: '🫧 Limpieza de garajes, sótanos y áticos',
