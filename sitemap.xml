@@ -8,7 +8,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sgmlcleansolutions.com/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://sgmlcleansolutions.com/?lang=es"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sgmlcleansolutions.com/"/>
-        <lastmod>2026-10-14</lastmod>
+        <lastmod>2026-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -17,7 +17,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sgmlcleansolutions.com/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://sgmlcleansolutions.com/?lang=es"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sgmlcleansolutions.com/"/>
-        <lastmod>2026-10-14</lastmod>
+        <lastmod>2026-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -26,9 +26,63 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sgmlcleansolutions.com/gallery/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://sgmlcleansolutions.com/gallery/?lang=es"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sgmlcleansolutions.com/gallery/"/>
-        <lastmod>2026-10-14</lastmod>
+        <lastmod>2026-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-clinic-floor-strip-wax-1.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-clinic-floor-strip-wax-2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-clinic-floor-strip-wax-3.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-office-carpet-cleaning-1.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-office-carpet-cleaning-2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-office-carpet-cleaning-3.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/glossy-floor-lounge-strip-wax-lowell-ma.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/conference-room-floor-waxed-burnished-massachusetts.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/cafeteria-floor-high-gloss-finish-massachusetts.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/therapy-gym-floor-burnishing-lowell-ma.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/hallway-vct-floor-shine-massachusetts.jpg</image:loc>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/video-poster-floor-strip-wax.jpg</video:thumbnail_loc>
+            <video:title>Floor stripping, waxing and burnishing by SGML Clean Solutions</video:title>
+            <video:description>Step-by-step video of a commercial floor being stripped, waxed and burnished in Massachusetts.</video:description>
+            <video:content_loc>https://sgmlcleansolutions.com/assets/floor-strip-wax-process-video.mp4</video:content_loc>
+            <video:publication_date>2026-10-19</video:publication_date>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/video-poster-carpet-cleaning.jpg</video:thumbnail_loc>
+            <video:title>Office carpet cleaning before and after</video:title>
+            <video:description>Office carpet stains before and after a deep cleaning by SGML Clean Solutions.</video:description>
+            <video:content_loc>https://sgmlcleansolutions.com/assets/office-carpet-cleaning-before-after-video.mp4</video:content_loc>
+            <video:publication_date>2026-10-19</video:publication_date>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/video-poster-glossy-floor-walkthrough.jpg</video:thumbnail_loc>
+            <video:title>Freshly burnished floor walkthrough</video:title>
+            <video:description>Walkthrough of a high-gloss commercial floor after burnishing by SGML Clean Solutions.</video:description>
+            <video:content_loc>https://sgmlcleansolutions.com/assets/glossy-floor-walkthrough-video.mp4</video:content_loc>
+            <video:publication_date>2026-10-19</video:publication_date>
+        </video:video>
         <image:image>
             <image:loc>https://sgmlcleansolutions.com/assets/floor-stripping-waxing-massachusetts.jpg</image:loc>
         </image:image>
@@ -52,7 +106,7 @@
         </image:image>
         <video:video>
             <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/hero-poster.jpg</video:thumbnail_loc>
-            <video:title>Floor burnishing by SGM Clean Solutions</video:title>
+            <video:title>Floor burnishing by SGML Clean Solutions</video:title>
             <video:description>Floor machine burnishing a commercial floor in Massachusetts.</video:description>
             <video:content_loc>https://sgmlcleansolutions.com/assets/banner.mp4</video:content_loc>
             <video:publication_date>2026-10-14</video:publication_date>
@@ -63,9 +117,63 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://sgmlcleansolutions.com/gallery/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://sgmlcleansolutions.com/gallery/?lang=es"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://sgmlcleansolutions.com/gallery/"/>
-        <lastmod>2026-10-14</lastmod>
+        <lastmod>2026-10-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-clinic-floor-strip-wax-1.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-clinic-floor-strip-wax-2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-clinic-floor-strip-wax-3.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-office-carpet-cleaning-1.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-office-carpet-cleaning-2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/before-after-office-carpet-cleaning-3.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/glossy-floor-lounge-strip-wax-lowell-ma.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/conference-room-floor-waxed-burnished-massachusetts.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/cafeteria-floor-high-gloss-finish-massachusetts.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/therapy-gym-floor-burnishing-lowell-ma.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sgmlcleansolutions.com/assets/hallway-vct-floor-shine-massachusetts.jpg</image:loc>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/video-poster-floor-strip-wax.jpg</video:thumbnail_loc>
+            <video:title>Floor stripping, waxing and burnishing by SGML Clean Solutions</video:title>
+            <video:description>Step-by-step video of a commercial floor being stripped, waxed and burnished in Massachusetts.</video:description>
+            <video:content_loc>https://sgmlcleansolutions.com/assets/floor-strip-wax-process-video.mp4</video:content_loc>
+            <video:publication_date>2026-10-19</video:publication_date>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/video-poster-carpet-cleaning.jpg</video:thumbnail_loc>
+            <video:title>Office carpet cleaning before and after</video:title>
+            <video:description>Office carpet stains before and after a deep cleaning by SGML Clean Solutions.</video:description>
+            <video:content_loc>https://sgmlcleansolutions.com/assets/office-carpet-cleaning-before-after-video.mp4</video:content_loc>
+            <video:publication_date>2026-10-19</video:publication_date>
+        </video:video>
+        <video:video>
+            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/video-poster-glossy-floor-walkthrough.jpg</video:thumbnail_loc>
+            <video:title>Freshly burnished floor walkthrough</video:title>
+            <video:description>Walkthrough of a high-gloss commercial floor after burnishing by SGML Clean Solutions.</video:description>
+            <video:content_loc>https://sgmlcleansolutions.com/assets/glossy-floor-walkthrough-video.mp4</video:content_loc>
+            <video:publication_date>2026-10-19</video:publication_date>
+        </video:video>
         <image:image>
             <image:loc>https://sgmlcleansolutions.com/assets/floor-stripping-waxing-massachusetts.jpg</image:loc>
         </image:image>

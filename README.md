@@ -1,6 +1,6 @@
-# SGM Clean Solutions – Website
+# SGML Clean Solutions – Website
 
-Static website for **SGM Clean Solutions** (cleaning, floor care and snow removal in Lowell and across Massachusetts) — https://sgmlcleansolutions.com
+Static website for **SGML Clean Solutions** (cleaning, floor care and snow removal in Lowell and across Massachusetts) — https://sgmlcleansolutions.com
 
 - **Language:** English by default, with a Spanish translation from the language
   selector (remembered per visitor). Each language has its own URL
