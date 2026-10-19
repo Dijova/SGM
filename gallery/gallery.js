@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Before/after sliders
+    document.querySelectorAll('.ba-frame').forEach(frame => {
+        const range = frame.querySelector('.ba-range');
+        range.addEventListener('input', () => frame.style.setProperty('--pos', range.value + '%'));
+    });
+
     // Lightbox for photos and videos
     const box = document.getElementById('lightbox');
     if (!box || typeof box.showModal !== 'function') return;
@@ -39,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (btn.dataset.video) {
             const v = document.createElement('video');
             v.src = btn.dataset.video; v.controls = true; v.autoplay = true; v.playsInline = true;
+            if ('portrait' in btn.dataset) v.className = 'portrait';
             media.appendChild(v);
         } else {
             const img = document.createElement('img');
