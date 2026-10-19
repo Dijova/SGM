@@ -1293,3 +1293,7 @@ button.work-item { width: 100%; padding: 0; border: 0; background: none; cursor:
 .work-grid .fit .work-item { background: #111; }
 .work-grid .fit .work-item img { object-fit: contain; }
 .work-grid .fit .work-item:hover img { transform: scale(1.02); }
+
+/* Service card without photo (icon header, same 3:2 box as the photos) */
+.service-media--icon { aspect-ratio: 3 / 2; display: grid; place-items: center; background: radial-gradient(circle at 50% 45%, #3d4a2c 0%, #262626 70%); }
+.service-media--icon svg { width: 34%; height: auto; }

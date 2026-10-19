@@ -27,7 +27,7 @@
 
 var SHEET_NAME = 'Quotes';
 var HEADERS = ['Timestamp (UTC)', 'Request ID', 'Name', 'Email', 'Phone', 'Service', 'Message', 'Language', 'Consent'];
-var ALLOWED_SERVICES = ['office', 'floors', 'condos', 'residential', 'commercial', 'snow'];
+var ALLOWED_SERVICES = ['office', 'floors', 'condos', 'residential', 'commercial', 'snow', 'junk'];
 var ALLOWED_LANGUAGES = ['en', 'es'];
 
 var MIN_ELAPSED_MS = 3000;

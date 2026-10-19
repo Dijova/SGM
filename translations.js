@@ -15,7 +15,7 @@ window.SGM_TRANSLATIONS = {
     en: {
         meta: {
             title: 'Floor Care & Cleaning Services in Lowell, MA | SGML Clean Solutions',
-            description: 'Floor stripping & waxing, buffing, burnishing, deep scrub & recoat, carpet and tile care in Lowell and across Massachusetts, plus commercial, residential cleaning and snow removal. Free quote.',
+            description: 'Floor stripping & waxing, buffing, burnishing, deep scrub & recoat, carpet and tile care in Lowell, Massachusetts and New Hampshire, plus commercial and residential cleaning, junk removal and snow removal. Free quote.',
             ogDescription: 'Floor care specialists in Lowell, MA: stripping & waxing, burnishing, carpet and tile care, plus complete cleaning. Free quote.'
         },
         common: {
@@ -70,7 +70,7 @@ window.SGM_TRANSLATIONS = {
             eyebrow: 'Our work',
             meta: { title: 'Floor Care & Cleaning Gallery: Real Jobs in Lowell, MA | SGML Clean Solutions', description: 'Photos and videos of floor stripping & waxing, burnishing, carpet and tile care and cleaning jobs by SGML Clean Solutions in Lowell and across Massachusetts.', og: 'Real floor stripping, waxing, burnishing and cleaning jobs in Lowell and across Massachusetts.' },
             title: 'Floor care & cleaning gallery in Massachusetts',
-            intro: 'Real jobs by the SGML crew: stripped and waxed floors, burnished hallways, offices, homes and winter snow removal across Massachusetts.',
+            intro: 'Real jobs by the SGML crew: stripped, waxed and burnished floors and deep-cleaned carpets in clinics, offices and commercial spaces across Massachusetts and New Hampshire.',
             filter: 'Filter gallery',
             f: { all: 'All', floors: 'Floor care', video: 'Videos', commercial: 'Commercial', residential: 'Residential', snow: 'Snow removal', ba: 'Before & after', carpet: 'Carpet' },
             i1: 'Burnishing · Commercial floor', i2: 'Strip & wax · Lowell', i3: 'Office cleaning', i4: 'Commercial cleaning', i5: 'Residential · Lowell', i6: 'Apartments & condos', i7: 'Our crew', i8: 'Snow removal', i9: 'Floor burnishing · Lowell',
@@ -80,7 +80,7 @@ window.SGM_TRANSLATIONS = {
             ba: { title: 'See the difference', intro: 'Drag the slider to compare before and after on real SGML jobs.', before: 'Before', after: 'After', range: 'Compare before and after', c1: 'Medical clinic · Strip & wax', c2: 'Office carpet · Deep cleaning', a1: 'Clinic exam room floor after stripping and waxing', b1: 'Clinic exam room floor before stripping and waxing', a2: 'Office carpet after deep cleaning', b2: 'Office carpet with traffic stains before cleaning' },
             cta: { text: 'Want your floors to look like this?', ig: 'More on Instagram' },
             seo: {
-                title: 'Floor care projects in Lowell and across Massachusetts',
+                title: 'Floor care projects in Massachusetts & New Hampshire',
                 p1: 'Every photo and video in this gallery comes from a real job by SGML Clean Solutions. We strip and wax VCT and vinyl floors, burnish hallways and lobbies, deep scrub and recoat high-traffic areas, extract carpets and clean and seal tile and grout for offices, schools, stores, restaurants, apartment buildings and homes.',
                 h1: 'Commercial floor stripping & waxing',
                 t1: 'We remove old finish and buildup, then lay new coats of floor finish and burnish them for a durable, high-gloss result, scheduled at night or on weekends so your business keeps running.',
@@ -88,7 +88,7 @@ window.SGM_TRANSLATIONS = {
                 t2: 'Between full strips, regular burnishing and scrub-and-recoat visits restore shine and extend the life of the finish at a lower cost.',
                 h3: 'Carpet, tile & grout care',
                 t3: 'Hot-water carpet extraction and tile and grout scrubbing and sealing remove stains, odors and embedded dirt from homes and commercial spaces.',
-                areas: 'Service area: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester and nearby towns in Massachusetts and southern New Hampshire (Nashua, Salem, Manchester).',
+                areas: 'Service area: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester and nearby towns in Massachusetts and New Hampshire, including Nashua, Salem and Manchester.',
                 l1: 'See our floor care services',
                 l2: 'Request a free floor quote'
             }
@@ -104,8 +104,8 @@ window.SGM_TRANSLATIONS = {
             imageAlt: 'SGML Clean Solutions technician burnishing a glossy commercial floor in Lowell, MA'
         },
         services: {
-            title: 'More Cleaning Services in Massachusetts',
-            intro: 'From daily office cleaning to floor restoration and winter snow removal, we serve Lowell, Boston, Cambridge, Worcester, Springfield and surrounding Massachusetts communities.',
+            title: 'More Cleaning Services in Massachusetts & New Hampshire',
+            intro: 'From daily office cleaning to floor restoration, junk removal and winter snow removal, we serve Lowell, Boston, Cambridge, Worcester, Nashua, Salem, Manchester and surrounding communities in Massachusetts and New Hampshire.',
             office: {
                 alt: 'Office cleaning service in Massachusetts',
                 title: 'Office Cleaning',
@@ -147,6 +147,12 @@ window.SGM_TRANSLATIONS = {
                 i1: '🫧 Roof & gutter snow removal',
                 i2: '🫧 Ice melt & anti-slip treatment',
                 i3: '🫧 Driveway & sidewalk clearing'
+            },
+            junk: {
+                title: 'Junk Removal',
+                i1: '🫧 Furniture, appliance & debris haul-away',
+                i2: '🫧 Garage, basement & attic cleanouts',
+                i3: '🫧 Post-construction & office cleanouts'
             }
         },
         testimonials: {
@@ -180,7 +186,8 @@ window.SGM_TRANSLATIONS = {
                 condos: 'Apartments & Condominiums',
                 residential: 'Residential Cleaning',
                 commercial: 'Commercial Cleaning',
-                snow: 'Snow Removal'
+                snow: 'Snow Removal',
+                junk: 'Junk Removal'
             },
             messageLabel: 'Additional details',
             message: 'Additional details (city, size of the space, preferred dates…)',
@@ -218,7 +225,7 @@ window.SGM_TRANSLATIONS = {
     es: {
         meta: {
             title: 'Cuidado de Pisos y Limpieza en Lowell, MA | SGML Clean Solutions',
-            description: 'Decapado y encerado, pulido, abrillantado, fregado profundo y recapa, alfombras y cerámica en Lowell y todo Massachusetts, además de limpieza comercial, residencial y remoción de nieve. Cotización gratis.',
+            description: 'Decapado y encerado, pulido, abrillantado, fregado profundo y recapa, alfombras y cerámica en Lowell, Massachusetts y New Hampshire, además de limpieza comercial y residencial, retiro de escombros y remoción de nieve. Cotización gratis.',
             ogDescription: 'Especialistas en pisos en Lowell, MA: decapado y encerado, abrillantado, alfombras y cerámica, y limpieza completa. Cotización gratis.'
         },
         common: {
@@ -273,7 +280,7 @@ window.SGM_TRANSLATIONS = {
             eyebrow: 'Nuestros trabajos',
             meta: { title: 'Galería de Pisos y Limpieza: Trabajos Reales en Lowell, MA | SGML Clean Solutions', description: 'Fotos y videos de decapado y encerado, abrillantado, alfombras, cerámica y trabajos de limpieza de SGML Clean Solutions en Lowell y todo Massachusetts.', og: 'Trabajos reales de decapado, encerado, abrillantado y limpieza en Lowell y todo Massachusetts.' },
             title: 'Galería de pisos y limpieza en Massachusetts',
-            intro: 'Trabajos reales del equipo SGML: pisos decapados y encerados, pasillos abrillantados, oficinas, hogares y remoción de nieve en todo Massachusetts.',
+            intro: 'Trabajos reales del equipo SGML: pisos decapados, encerados y abrillantados y alfombras con limpieza profunda en consultorios, oficinas y espacios comerciales de Massachusetts y New Hampshire.',
             filter: 'Filtrar galería',
             f: { all: 'Todo', floors: 'Pisos', video: 'Videos', commercial: 'Comercial', residential: 'Residencial', snow: 'Nieve', ba: 'Antes y después', carpet: 'Alfombras' },
             i1: 'Abrillantado · Piso comercial', i2: 'Decapado y encerado · Lowell', i3: 'Limpieza de oficinas', i4: 'Limpieza comercial', i5: 'Residencial · Lowell', i6: 'Apartamentos y condominios', i7: 'Nuestro equipo', i8: 'Remoción de nieve', i9: 'Abrillantado de pisos · Lowell',
@@ -283,7 +290,7 @@ window.SGM_TRANSLATIONS = {
             ba: { title: 'Mira la diferencia', intro: 'Desliza para comparar el antes y el después en trabajos reales de SGML.', before: 'Antes', after: 'Después', range: 'Comparar antes y después', c1: 'Clínica médica · Decapado y encerado', c2: 'Alfombra de oficina · Limpieza profunda', a1: 'Piso de consultorio después del decapado y encerado', b1: 'Piso de consultorio antes del decapado y encerado', a2: 'Alfombra de oficina después de la limpieza profunda', b2: 'Alfombra de oficina con manchas de tráfico antes de la limpieza' },
             cta: { text: '¿Quieres que tus pisos luzcan así?', ig: 'Más en Instagram' },
             seo: {
-                title: 'Proyectos de cuidado de pisos en Lowell y todo Massachusetts',
+                title: 'Proyectos de cuidado de pisos en Massachusetts y New Hampshire',
                 p1: 'Cada foto y video de esta galería es de un trabajo real de SGML Clean Solutions. Decapamos y enceramos pisos VCT y de vinilo, abrillantamos pasillos y vestíbulos, hacemos fregado profundo y recapa en zonas de alto tráfico, limpiamos alfombras por extracción y limpiamos y sellamos cerámica y juntas en oficinas, escuelas, tiendas, restaurantes, edificios de apartamentos y hogares.',
                 h1: 'Decapado y encerado de pisos comerciales',
                 t1: 'Retiramos el acabado viejo y la suciedad acumulada, aplicamos capas nuevas de acabado y las abrillantamos para un resultado duradero y de alto brillo, en horario nocturno o de fin de semana para que tu negocio siga funcionando.',
@@ -291,7 +298,7 @@ window.SGM_TRANSLATIONS = {
                 t2: 'Entre decapados completos, el abrillantado periódico y el fregado con recapa devuelven el brillo y alargan la vida del acabado a menor costo.',
                 h3: 'Alfombras, cerámica y juntas',
                 t3: 'La extracción con agua caliente y el fregado y sellado de cerámica y juntas eliminan manchas, olores y suciedad incrustada en hogares y espacios comerciales.',
-                areas: 'Zona de servicio: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester y pueblos cercanos de Massachusetts y el sur de New Hampshire (Nashua, Salem, Manchester).',
+                areas: 'Zona de servicio: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester y pueblos cercanos de Massachusetts y New Hampshire, incluidos Nashua, Salem y Manchester.',
                 l1: 'Ver nuestros servicios de pisos',
                 l2: 'Pedir cotización gratis de pisos'
             }
@@ -307,8 +314,8 @@ window.SGM_TRANSLATIONS = {
             imageAlt: 'Técnico de SGML Clean Solutions abrillantando un piso comercial en Lowell, MA'
         },
         services: {
-            title: 'Más Servicios de Limpieza en Massachusetts',
-            intro: 'Desde la limpieza diaria de oficinas hasta la restauración de pisos y la remoción de nieve en invierno, atendemos Lowell, Boston, Cambridge, Worcester, Springfield y comunidades cercanas de Massachusetts.',
+            title: 'Más Servicios de Limpieza en Massachusetts y New Hampshire',
+            intro: 'Desde la limpieza diaria de oficinas hasta la restauración de pisos, el retiro de escombros y la remoción de nieve en invierno, atendemos Lowell, Boston, Cambridge, Worcester, Nashua, Salem, Manchester y comunidades cercanas de Massachusetts y New Hampshire.',
             office: {
                 alt: 'Servicio de limpieza de oficinas en Massachusetts',
                 title: 'Limpieza de Oficinas',
@@ -350,6 +357,12 @@ window.SGM_TRANSLATIONS = {
                 i1: '🫧 Remoción de nieve en techos y canaletas',
                 i2: '🫧 Derretido de hielo y tratamiento antideslizante',
                 i3: '🫧 Limpieza de entradas y aceras'
+            },
+            junk: {
+                title: 'Retiro de Escombros (Junk Removal)',
+                i1: '🫧 Retiro de muebles, electrodomésticos y escombros',
+                i2: '🫧 Limpieza de garajes, sótanos y áticos',
+                i3: '🫧 Vaciado post-construcción y de oficinas'
             }
         },
         testimonials: {
@@ -383,7 +396,8 @@ window.SGM_TRANSLATIONS = {
                 condos: 'Apartamentos y Condominios',
                 residential: 'Limpieza Residencial',
                 commercial: 'Limpieza Comercial',
-                snow: 'Remoción de Nieve'
+                snow: 'Remoción de Nieve',
+                junk: 'Retiro de Escombros (Junk Removal)'
             },
             messageLabel: 'Detalles adicionales',
             message: 'Detalles adicionales (ciudad, tamaño del espacio, fechas preferidas…)',

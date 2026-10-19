@@ -83,34 +83,6 @@
             <video:content_loc>https://sgmlcleansolutions.com/assets/glossy-floor-walkthrough-video.mp4</video:content_loc>
             <video:publication_date>2026-10-19</video:publication_date>
         </video:video>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/floor-stripping-waxing-massachusetts.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/floor-care-burnishing-lowell-ma.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/office-cleaning-massachusetts.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/commercial-cleaning-massachusetts.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/residential-house-cleaning-lowell-ma.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/apartment-condominium-cleaning.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/snow-removal-lowell-ma.jpg</image:loc>
-        </image:image>
-        <video:video>
-            <video:thumbnail_loc>https://sgmlcleansolutions.com/assets/hero-poster.jpg</video:thumbnail_loc>
-            <video:title>Floor burnishing by SGML Clean Solutions</video:title>
-            <video:description>Floor machine burnishing a commercial floor in Massachusetts.</video:description>
-            <video:content_loc>https://sgmlcleansolutions.com/assets/banner.mp4</video:content_loc>
-            <video:publication_date>2026-10-14</video:publication_date>
-        </video:video>
     </url>
     <url>
         <loc>https://sgmlcleansolutions.com/gallery/?lang=es</loc>
@@ -174,26 +146,5 @@
             <video:content_loc>https://sgmlcleansolutions.com/assets/glossy-floor-walkthrough-video.mp4</video:content_loc>
             <video:publication_date>2026-10-19</video:publication_date>
         </video:video>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/floor-stripping-waxing-massachusetts.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/floor-care-burnishing-lowell-ma.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/office-cleaning-massachusetts.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/commercial-cleaning-massachusetts.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/residential-house-cleaning-lowell-ma.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/apartment-condominium-cleaning.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://sgmlcleansolutions.com/assets/snow-removal-lowell-ma.jpg</image:loc>
-        </image:image>
     </url>
 </urlset>
