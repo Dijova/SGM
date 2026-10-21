@@ -157,6 +157,8 @@ SERVICES = [
     {
         'key': 'junk', 'slug': 'junk-removal',
         'img': 'junk-removal-truck-massachusetts-new-hampshire.jpg', 'w': 900, 'h': 600,
+        # The home card image has flyer text; the banner uses the plain truck photo
+        'banner': 'junk-removal-truck-lowell-ma.jpg', 'bw': 900, 'bh': 340,
         'img2': 'junk-removal-crew-lowell-ma.jpg', 'w2': 1200, 'h2': 800,
         'serviceType': 'Junk removal',
         'en': {
@@ -611,7 +613,7 @@ def page(s):
                 </div>
                 </div>
                 <div class="svc-banner">
-                    <img src="../../assets/{s['img']}" alt="{esc(d['name'])} — SGML Clean Solutions" data-i18n-alt="{p}.name" width="{s['w']}" height="{s['h']}" fetchpriority="high" decoding="async">
+                    <img src="../../assets/{s.get('banner', s['img'])}" alt="{esc(d['name'])} — SGML Clean Solutions" data-i18n-alt="{p}.name" width="{s.get('bw', s['w'])}" height="{s.get('bh', s['h'])}" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </section>
