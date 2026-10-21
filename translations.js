@@ -172,7 +172,8 @@ window.SGM_TRANSLATIONS = {
             attribution: 'Reviews from Google',
             count: 'Based on {n} Google reviews',
             readOnGoogle: 'Read on Google',
-            rated: 'Rated {n} out of 5'
+            rated: 'Rated {n} out of 5',
+            rated5: 'Rated 5 out of 5 on Google'
         },
         quote: {
             title: 'Request a Free Quote',
@@ -386,7 +387,8 @@ window.SGM_TRANSLATIONS = {
             attribution: 'Reseñas de Google',
             count: 'Basado en {n} reseñas de Google',
             readOnGoogle: 'Leer en Google',
-            rated: 'Calificación: {n} de 5'
+            rated: 'Calificación: {n} de 5',
+            rated5: 'Calificación de 5 de 5 en Google'
         },
         quote: {
             title: 'Solicite una Cotización Gratuita',

@@ -1366,3 +1366,6 @@ button.work-item { width: 100%; padding: 0; border: 0; background: none; cursor:
     .svc-hero::after { background: rgba(25,25,25,.82); }
     .svc-related-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Google star rating above "Google review" on the static review cards */
+.review-stars { display: block; font-size: 1.15rem; letter-spacing: 3px; margin-top: 6px; line-height: 1; }
