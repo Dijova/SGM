@@ -24,7 +24,6 @@ COMMON = {
         'services': 'Services',
         'quote': 'Get a free quote',
         'call': 'Call (954) 245-1566',
-        'fab': 'Free quote',
         'included': "What's included",
         'ideal': 'Ideal for',
         'how': 'How it works',
@@ -44,7 +43,6 @@ COMMON = {
         'services': 'Servicios',
         'quote': 'Solicita tu cotización gratis',
         'call': 'Llama al (954) 245-1566',
-        'fab': 'Cotización gratis',
         'included': 'Qué incluye',
         'ideal': 'Ideal para',
         'how': 'Cómo funciona',
@@ -159,6 +157,7 @@ SERVICES = [
     {
         'key': 'junk', 'slug': 'junk-removal',
         'img': 'junk-removal-truck-massachusetts-new-hampshire.jpg', 'w': 900, 'h': 600,
+        'img2': 'sgml-truck-lowell-ma.jpg', 'w2': 640, 'h2': 298,
         'serviceType': 'Junk removal',
         'en': {
             'name': 'Junk Removal',
@@ -295,6 +294,7 @@ SERVICES = [
     {
         'key': 'residential', 'slug': 'residential-cleaning',
         'img': 'residential-house-cleaning-lowell-ma.jpg', 'w': 900, 'h': 708,
+        'img2': 'sgm-clean-solutions-team.jpg', 'w2': 800, 'h2': 800,
         'serviceType': 'House cleaning',
         'en': {
             'name': 'Residential Cleaning',
@@ -340,7 +340,7 @@ SERVICES = [
     {
         'key': 'stripwax', 'form': 'floors', 'slug': 'floor-stripping-waxing',
         'img': 'floor-stripping-waxing-massachusetts.jpg', 'w': 900, 'h': 601,
-        'img2': 'before-after-clinic-floor-strip-wax-1.jpg', 'w2': 900, 'h2': 1125,
+        'img2': 'therapy-gym-floor-burnishing-lowell-ma.jpg', 'w2': 900, 'h2': 1200,
         'serviceType': 'Floor stripping and waxing',
         'en': {
             'name': 'Floor Stripping & Waxing',
@@ -385,8 +385,8 @@ SERVICES = [
     },
     {
         'key': 'carpet', 'form': 'floors', 'slug': 'carpet-cleaning',
-        'img': 'before-after-office-carpet-cleaning-1.jpg', 'w': 900, 'h': 900,
-        'img2': 'slider-office-carpet-after.jpg', 'w2': 600, 'h2': 1100,
+        'img': 'slider-office-carpet-after.jpg', 'w': 600, 'h': 1100,
+        'img2': 'cafeteria-floor-high-gloss-finish-massachusetts.jpg', 'w2': 900, 'h2': 1200,
         'serviceType': 'Carpet cleaning',
         'en': {
             'name': 'Carpet, Tile & Grout Cleaning',
@@ -506,10 +506,14 @@ def page(s):
         f'                    <li><a href="../{o["slug"]}/" data-lang-link><img src="../../assets/{o["img"]}" alt="" width="{o["w"]}" height="{o["h"]}" loading="lazy" decoding="async">'
         f'<span data-i18n="sp.{o["key"]}.name">{esc(o["en"]["name"])}</span></a></li>'
         for o in SERVICES if o is not s)
-    img2 = ''
+
+    media = ''
     if s.get('img2'):
-        img2 = (f'\n                    <img class="svc-img2" src="../../assets/{s["img2"]}" alt="{esc(d["name"])} — SGML Clean Solutions" '
-                f'data-i18n-alt="{p}.name" width="{s["w2"]}" height="{s["h2"]}" loading="lazy" decoding="async">')
+        media = (f'                <div class="svc-media">\n'
+                 f'                    <img src="../../assets/{s["img2"]}" alt="{esc(d["name"])} — SGML Clean Solutions, Lowell, MA" data-i18n-alt="{p}.name" '
+                 f'width="{s["w2"]}" height="{s["h2"]}" loading="lazy" decoding="async">\n'
+                 f'                </div>\n')
+    grid = 'container svc-grid' if media else 'container svc-grid svc-grid-single'
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -593,8 +597,9 @@ def page(s):
     </header>
 
     <main id="main">
-        <section class="svc-hero" style="--svc-bg: url('../../assets/{s['img']}')">
-            <div class="container">
+        <section class="svc-hero">
+            <div class="container svc-hero-grid">
+                <div class="svc-hero-text">
                 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../" data-i18n="nav.home" data-lang-link>Home</a> › <a href="../../#services" data-i18n="sp.c.services" data-lang-link>Services</a> › <span data-i18n="{p}.name">{esc(d['name'])}</span></nav>
                 <p class="eyebrow" data-i18n="{p}.eyebrow">{esc(d['eyebrow'])}</p>
                 <h1 data-i18n="{p}.h1">{esc(d['h1'])}</h1>
@@ -603,15 +608,16 @@ def page(s):
                     <a href="{quote}" class="cta-button" data-i18n="sp.c.quote" data-lang-link>{esc(c['quote'])}</a>
                     <a href="tel:+19542451566" class="cta-button cta-secondary" data-i18n="sp.c.call">{esc(c['call'])}</a>
                 </div>
+                </div>
+                <div class="svc-banner">
+                    <img src="../../assets/{s['img']}" alt="{esc(d['name'])} — SGML Clean Solutions" data-i18n-alt="{p}.name" width="{s['w']}" height="{s['h']}" fetchpriority="high" decoding="async">
+                </div>
             </div>
         </section>
 
         <section class="svc-detail">
-            <div class="container svc-grid">
-                <div class="svc-media">
-                    <img src="../../assets/{s['img']}" alt="{esc(d['name'])} — SGML Clean Solutions, Lowell, MA" data-i18n-alt="{p}.name" width="{s['w']}" height="{s['h']}" decoding="async">{img2}
-                </div>
-                <div class="svc-text">
+            <div class="{grid}">
+{media}                <div class="svc-text">
                     <p data-i18n="{p}.p1">{esc(d['p1'])}</p>
                     <p data-i18n="{p}.p2">{esc(d['p2'])}</p>
                     <h2 data-i18n="sp.c.included">{esc(c['included'])}</h2>
@@ -667,8 +673,6 @@ def page(s):
             </div>
         </section>
     </main>
-
-    <a href="{quote}" class="quote-fab" data-i18n="sp.c.fab" data-lang-link>{esc(c['fab'])}</a>
 
     <footer>
         <div class="container">
