@@ -249,7 +249,7 @@ SERVICES = [
     {
         'key': 'condos', 'slug': 'apartment-condo-cleaning',
         'img': 'apartment-condominium-cleaning.jpg', 'w': 800, 'h': 533,
-        'img2': 'glossy-floor-lounge-strip-wax-lowell-ma.jpg', 'w2': 900, 'h2': 1200,
+        'img2': 'apartment-lobby-cleaning-lowell-ma.jpg', 'w2': 1200, 'h2': 800,
         'serviceType': 'Apartment and condominium cleaning',
         'en': {
             'name': 'Apartments & Condominiums',
