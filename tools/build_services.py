@@ -157,7 +157,7 @@ SERVICES = [
     {
         'key': 'junk', 'slug': 'junk-removal',
         'img': 'junk-removal-truck-massachusetts-new-hampshire.jpg', 'w': 900, 'h': 600,
-        'img2': 'sgml-truck-lowell-ma.jpg', 'w2': 640, 'h2': 298,
+        'img2': 'junk-removal-crew-lowell-ma.jpg', 'w2': 1200, 'h2': 800,
         'serviceType': 'Junk removal',
         'en': {
             'name': 'Junk Removal',
@@ -203,6 +203,7 @@ SERVICES = [
     {
         'key': 'snow', 'slug': 'snow-removal',
         'img': 'snow-removal-lowell-ma.jpg', 'w': 620, 'h': 420,
+        'img2': 'snow-removal-crew-lowell-ma.jpg', 'w2': 1200, 'h2': 800,
         'serviceType': 'Snow removal',
         'en': {
             'name': 'Snow Removal',
@@ -385,7 +386,7 @@ SERVICES = [
     },
     {
         'key': 'carpet', 'form': 'floors', 'slug': 'carpet-cleaning',
-        'img': 'slider-office-carpet-after.jpg', 'w': 600, 'h': 1100,
+        'img': 'carpet-cleaning-extraction-lowell-ma.jpg', 'w': 1200, 'h': 800,
         'img2': 'cafeteria-floor-high-gloss-finish-massachusetts.jpg', 'w2': 900, 'h2': 1200,
         'serviceType': 'Carpet cleaning',
         'en': {
