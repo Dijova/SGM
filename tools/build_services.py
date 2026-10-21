@@ -111,7 +111,7 @@ SERVICES = [
     {
         'key': 'commercial', 'slug': 'commercial-cleaning',
         'img': 'commercial-cleaning-massachusetts.jpg', 'w': 900, 'h': 600,
-        'img2': 'hallway-vct-floor-shine-massachusetts.jpg', 'w2': 900, 'h2': 1200,
+        'img2': 'cafeteria-floor-high-gloss-finish-massachusetts.jpg', 'w2': 900, 'h2': 1200,
         'serviceType': 'Commercial cleaning',
         'en': {
             'name': 'Commercial Cleaning',
