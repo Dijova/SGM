@@ -54,7 +54,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const PHONE_REGEX = /^\+?[0-9\s\-().]{7,25}$/;
     // Links and markup are rejected to keep the form from being used to deliver phishing links.
     const LINK_OR_HTML_REGEX = /(https?:\/\/|www\.|<[^>]*>|\[url|href\s*=)/i;
-    const ALLOWED_SERVICES = ['office', 'floors', 'condos', 'residential', 'commercial', 'snow'];
+    const ALLOWED_SERVICES = ['office', 'commercial', 'junk', 'snow', 'condos', 'residential', 'floors'];
+
+    // Service pages link to ?service=<value>#quote: preselect that service.
+    const serviceSelect = document.getElementById('qf-service');
+    const requestedService = new URLSearchParams(window.location.search).get('service');
+    if (serviceSelect && ALLOWED_SERVICES.includes(requestedService)) serviceSelect.value = requestedService;
 
     function getFieldError(field) {
         const value = field.type === 'checkbox' ? field.checked : field.value.trim();

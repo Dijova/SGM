@@ -55,6 +55,8 @@ window.SGM_TRANSLATIONS = {
             l5: { t: 'Tile & grout', d: 'Scrubbing and sealing that keeps grout lines clean.' },
             l6: { t: 'Maintenance plans', d: 'Scheduled visits so your floors always look their best.' },
             cta: 'Quote my floors',
+            more: 'Floor stripping & waxing',
+            carpet: 'Carpet & tile cleaning',
             s1: { t: 'Inspect', d: 'We check the floor type, wear and traffic.' },
             s2: { t: 'Strip & clean', d: 'Old finish and buildup come off.' },
             s3: { t: 'Finish & protect', d: 'New wax or sealer, then burnished.' },
@@ -62,8 +64,8 @@ window.SGM_TRANSLATIONS = {
         },
         area: {
             eyebrow: 'Service area',
-            title: 'Based in Lowell, serving Massachusetts & New Hampshire',
-            intro: 'Our crew travels with commercial floor equipment to Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester, Nashua, Salem, Manchester and nearby towns in Massachusetts and New Hampshire.',
+            title: 'Based in Lowell, serving the Merrimack Valley & southern New Hampshire',
+            intro: 'Our crew travels with commercial floor equipment within about 25 miles of Lowell: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Westford, Tyngsborough, Lawrence, Methuen, Andover, North Andover, Haverhill, Wilmington, Burlington, Woburn, Bedford, Acton and Littleton in Massachusetts, and Nashua, Hudson, Salem, Pelham, Windham, Londonderry, Derry and Merrimack in southern New Hampshire.',
             directions: 'Open in Google Maps'
         },
         g: {
@@ -88,7 +90,7 @@ window.SGM_TRANSLATIONS = {
                 t2: 'Between full strips, regular burnishing and scrub-and-recoat visits restore shine and extend the life of the finish at a lower cost.',
                 h3: 'Carpet, tile & grout care',
                 t3: 'Hot-water carpet extraction and tile and grout scrubbing and sealing remove stains, odors and embedded dirt from homes and commercial spaces.',
-                areas: 'Service area: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester and nearby towns in Massachusetts and New Hampshire, including Nashua, Salem and Manchester.',
+                areas: 'Service area: about 25 miles around Lowell, MA — Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Westford, Tyngsborough, Lawrence, Methuen, Andover, North Andover, Haverhill, Wilmington, Burlington, Woburn, Bedford, Acton and Littleton in Massachusetts, and Nashua, Hudson, Salem, Pelham, Windham, Londonderry, Derry and Merrimack in southern New Hampshire.',
                 l1: 'See our floor care services',
                 l2: 'Request a free floor quote'
             }
@@ -105,7 +107,8 @@ window.SGM_TRANSLATIONS = {
         },
         services: {
             title: 'More Cleaning Services in Massachusetts & New Hampshire',
-            intro: 'From daily office cleaning to floor restoration, junk removal and winter snow removal, we serve Lowell, Boston, Cambridge, Worcester, Nashua, Salem, Manchester and surrounding communities in Massachusetts and New Hampshire.',
+            intro: 'From daily office cleaning to junk removal and winter snow removal, we serve businesses and homes within about 25 miles of Lowell, MA, including southern New Hampshire. Tap a service to see what is included.',
+            more: 'Learn more →',
             office: {
                 alt: 'Office cleaning service in Massachusetts',
                 title: 'Office Cleaning',
@@ -266,6 +269,8 @@ window.SGM_TRANSLATIONS = {
             l5: { t: 'Cerámica y juntas', d: 'Fregado y sellado que mantiene limpias las juntas.' },
             l6: { t: 'Planes de mantenimiento', d: 'Visitas programadas para que tus pisos siempre luzcan bien.' },
             cta: 'Cotizar mis pisos',
+            more: 'Decapado y encerado de pisos',
+            carpet: 'Limpieza de alfombras y baldosas',
             s1: { t: 'Inspección', d: 'Revisamos el tipo de piso, el desgaste y el tráfico.' },
             s2: { t: 'Decapado y limpieza', d: 'Retiramos el acabado viejo y la suciedad acumulada.' },
             s3: { t: 'Acabado y protección', d: 'Cera o sellador nuevo, y después abrillantado.' },
@@ -273,8 +278,8 @@ window.SGM_TRANSLATIONS = {
         },
         area: {
             eyebrow: 'Zona de servicio',
-            title: 'Desde Lowell, atendemos Massachusetts y New Hampshire',
-            intro: 'Nuestro equipo viaja con maquinaria comercial para pisos a Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester, Nashua, Salem, Manchester y pueblos cercanos de Massachusetts y New Hampshire.',
+            title: 'Desde Lowell, atendemos el valle de Merrimack y el sur de New Hampshire',
+            intro: 'Nuestro equipo viaja con maquinaria comercial para pisos en un radio de unas 25 millas de Lowell: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Westford, Tyngsborough, Lawrence, Methuen, Andover, North Andover, Haverhill, Wilmington, Burlington, Woburn, Bedford, Acton y Littleton en Massachusetts, y Nashua, Hudson, Salem, Pelham, Windham, Londonderry, Derry y Merrimack en el sur de New Hampshire.',
             directions: 'Abrir en Google Maps'
         },
         g: {
@@ -299,7 +304,7 @@ window.SGM_TRANSLATIONS = {
                 t2: 'Entre decapados completos, el abrillantado periódico y el fregado con recapa devuelven el brillo y alargan la vida del acabado a menor costo.',
                 h3: 'Alfombras, cerámica y juntas',
                 t3: 'La extracción con agua caliente y el fregado y sellado de cerámica y juntas eliminan manchas, olores y suciedad incrustada en hogares y espacios comerciales.',
-                areas: 'Zona de servicio: Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Lawrence, Andover, Boston, Cambridge, Worcester y pueblos cercanos de Massachusetts y New Hampshire, incluidos Nashua, Salem y Manchester.',
+                areas: 'Zona de servicio: unas 25 millas alrededor de Lowell, MA — Lowell, Dracut, Chelmsford, Tewksbury, Billerica, Westford, Tyngsborough, Lawrence, Methuen, Andover, North Andover, Haverhill, Wilmington, Burlington, Woburn, Bedford, Acton y Littleton en Massachusetts, y Nashua, Hudson, Salem, Pelham, Windham, Londonderry, Derry y Merrimack en el sur de New Hampshire.',
                 l1: 'Ver nuestros servicios de pisos',
                 l2: 'Pedir cotización gratis de pisos'
             }
@@ -316,7 +321,8 @@ window.SGM_TRANSLATIONS = {
         },
         services: {
             title: 'Más Servicios de Limpieza en Massachusetts y New Hampshire',
-            intro: 'Desde la limpieza diaria de oficinas hasta la restauración de pisos, el retiro de escombros y la remoción de nieve en invierno, atendemos Lowell, Boston, Cambridge, Worcester, Nashua, Salem, Manchester y comunidades cercanas de Massachusetts y New Hampshire.',
+            intro: 'Desde la limpieza diaria de oficinas hasta el retiro de escombros y la remoción de nieve en invierno, atendemos negocios y hogares en un radio de unas 25 millas de Lowell, MA, incluido el sur de New Hampshire. Toca un servicio para ver qué incluye.',
+            more: 'Ver más →',
             office: {
                 alt: 'Servicio de limpieza de oficinas en Massachusetts',
                 title: 'Limpieza de Oficinas',

@@ -1293,3 +1293,76 @@ button.work-item { width: 100%; padding: 0; border: 0; background: none; cursor:
 .work-grid .fit .work-item { background: #111; }
 .work-grid .fit .work-item img { object-fit: contain; }
 .work-grid .fit .work-item:hover img { transform: scale(1.02); }
+
+/* Home service cards link to their service pages */
+.service-item { display: flex; flex-direction: column; }
+.service-media { display: block; overflow: hidden; }
+.service-media img { transition: transform .4s ease; }
+.service-item:hover .service-media img { transform: scale(1.05); }
+.service-item h3 a { color: inherit; text-decoration: none; }
+.service-item h3 a:hover { text-decoration: underline; }
+.service-more { margin: auto 20px 20px; align-self: flex-start; color: var(--green); font-weight: 700; text-decoration: none; border: 2px solid var(--green); border-radius: 999px; padding: 6px 16px; }
+.service-more:hover { background: var(--green); color: #fff; }
+
+/* "Our floor care services" over a faded photo of the SGML truck */
+.floor-care-block { position: relative; isolation: isolate; margin-top: 64px; padding: 48px 32px 40px; border-radius: 18px; overflow: hidden; }
+.floor-care-block::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("assets/sgml-truck-lowell-ma.jpg") center / cover no-repeat; opacity: .35; }
+.floor-care-block::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(35,35,35,.55), rgba(35,35,35,.8)); }
+.floor-care-block .floor-heading { margin-top: 0; }
+.floor-care-block .floor-list li { background: rgba(43,43,43,.88); }
+.floor-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+@media (max-width: 900px) { .floor-care-block { padding: 34px 16px 28px; margin-top: 44px; } }
+
+/* Service pages */
+.svc-hero { position: relative; isolation: isolate; padding: 56px 0 64px; color: #fff; }
+.svc-hero::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--svc-bg) center / cover no-repeat; }
+.svc-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(25,25,25,.92) 0%, rgba(25,25,25,.75) 55%, rgba(25,25,25,.45) 100%); }
+.svc-hero h1 { font-size: clamp(2rem, 4.2vw, 3.1rem); line-height: 1.15; max-width: 820px; margin: 10px 0 14px; }
+.svc-hero .eyebrow { margin-top: 22px; }
+.svc-intro { max-width: 680px; color: #e6e6e6; font-size: 1.1rem; margin-bottom: 26px; }
+.service-page main { padding-top: 86px; }
+.svc-hero .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-start; }
+.svc-detail, .svc-faq { background: var(--ink); padding: 64px 0; color: #ddd; }
+.svc-ideal, .svc-related { background: var(--ink-3); padding: 60px 0; color: #ddd; }
+.service-page main h2 { color: var(--green); font-size: clamp(1.5rem, 2.4vw, 2rem); margin-bottom: 18px; }
+.svc-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 44px; align-items: start; }
+.svc-media { display: grid; gap: 16px; }
+.svc-media img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 12px 30px rgba(0,0,0,.35); display: block; }
+.svc-media .svc-img2 { max-height: 420px; object-fit: cover; }
+.svc-text p { margin-bottom: 16px; line-height: 1.7; }
+.svc-text h2 { margin-top: 26px; }
+.svc-checks { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; margin-bottom: 28px; }
+.svc-checks li { position: relative; padding-left: 28px; }
+.svc-checks li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 700; }
+.svc-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 44px; }
+.svc-chips li { background: var(--ink-2); border: 1px solid rgba(141,198,63,.5); border-radius: 999px; padding: 8px 18px; color: #fff; }
+.svc-steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.svc-steps li { background: var(--ink-2); border-top: 3px solid var(--green); border-radius: 12px; padding: 20px; }
+.svc-steps strong { display: block; color: #fff; margin-bottom: 6px; }
+.faq-item { background: var(--ink-2); border-radius: 10px; margin-bottom: 12px; padding: 0 18px; }
+.faq-item summary { cursor: pointer; padding: 16px 0; font-weight: 700; color: #fff; }
+.faq-item summary::marker { color: var(--green); }
+.faq-item p { padding-bottom: 16px; line-height: 1.65; }
+.svc-faq h2 + .faq-item { margin-top: 4px; }
+.svc-faq .faq-item:last-of-type { margin-bottom: 44px; }
+.svc-area { line-height: 1.7; }
+.svc-band { background: var(--green); color: #fff; text-align: center; padding: 56px 0; }
+.service-page .svc-band h2 { color: #fff; }
+.svc-band p { max-width: 640px; margin: 0 auto 22px; font-size: 1.1rem; }
+.svc-band .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.svc-band .cta-button { background: #232323; }
+.svc-band .cta-button:hover { background: #000; }
+.svc-related-grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.svc-related-grid a { display: block; background: var(--ink-2); border-radius: 12px; overflow: hidden; color: #fff; text-decoration: none; font-weight: 700; transition: transform .25s ease; }
+.svc-related-grid a:hover { transform: translateY(-4px); }
+.svc-related-grid img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; display: block; }
+.svc-related-grid span { display: block; padding: 12px 14px; }
+.quote-fab { position: fixed; left: 18px; bottom: 18px; z-index: 900; background: var(--green); color: #fff; font-weight: 700; text-decoration: none; padding: 13px 22px; border-radius: 999px; box-shadow: 0 8px 22px rgba(0,0,0,.45); }
+.quote-fab:hover { background: #75a928; }
+@media (max-width: 900px) {
+    .svc-grid { grid-template-columns: 1fr; gap: 28px; }
+    .svc-checks, .svc-steps { grid-template-columns: 1fr; }
+    .svc-hero { padding: 40px 0 48px; }
+    .svc-hero::after { background: rgba(25,25,25,.82); }
+    .svc-related-grid { grid-template-columns: repeat(2, 1fr); }
+}

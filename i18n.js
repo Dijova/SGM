@@ -76,7 +76,7 @@
             }
             // Keep relative links relative (works on any host and on file://).
             const [pathPart, hash] = base.split('#');
-            a.setAttribute('href', pathPart + '?lang=' + encodeURIComponent(lang) + (hash !== undefined ? '#' + hash : ''));
+            a.setAttribute('href', pathPart + (pathPart.includes('?') ? '&' : '?') + 'lang=' + encodeURIComponent(lang) + (hash !== undefined ? '#' + hash : ''));
         });
     }
 

@@ -56,3 +56,13 @@ find the site. Either:
   without `backend/`), or
 - extract `SGM-main.zip` and upload the **contents** of `SGM-main/` (not the
   folder itself) into `public_html`, including the hidden `.htaccess` file.
+
+## Service pages
+
+Each service has its own indexable page under `services/<slug>/`, generated from the
+texts (English and Spanish) in `tools/build_services.py`:
+
+    python3 tools/build_services.py
+
+Edit the texts there and run the script again; it rewrites the pages and
+`services/services-i18n.js`. Remember to add any new page to `sitemap.xml`.
