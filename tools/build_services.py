@@ -566,7 +566,7 @@ def page(s):
     <script src="../../translations.js" defer></script>
     <script src="../services-i18n.js" defer></script>
     <script src="../../i18n.js" defer></script>
-    <script src="../services.js" defer></script>
+    <script src="../../menu.js" defer></script>
     <script src="../../tawk.js" defer></script>
 </head>
 <body class="dark-theme service-page">

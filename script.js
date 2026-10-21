@@ -11,36 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     /* ------------------------------------------------------------------
-     * Responsive menu
-     * ------------------------------------------------------------------ */
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    function setMenuOpen(open) {
-        navMenu.classList.toggle('show', open);
-        menuToggle.classList.toggle('active', open);
-        menuToggle.setAttribute('aria-expanded', String(open));
-    }
-
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', function () {
-            setMenuOpen(!navMenu.classList.contains('show'));
-        });
-
-        // Close the menu after choosing a link (mobile)
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => setMenuOpen(false));
-        });
-
-        // Close the menu when clicking outside of it (mobile)
-        document.addEventListener('click', function (event) {
-            if (!menuToggle.contains(event.target) && !navMenu.contains(event.target)) {
-                setMenuOpen(false);
-            }
-        });
-    }
-
-    /* ------------------------------------------------------------------
      * Quote form: validation
      * ------------------------------------------------------------------ */
     const quoteForm = document.getElementById('quote-form');
