@@ -387,7 +387,7 @@ SERVICES = [
     {
         'key': 'carpet', 'form': 'floors', 'slug': 'carpet-cleaning',
         'img': 'carpet-cleaning-extraction-lowell-ma.jpg', 'w': 1200, 'h': 800,
-        'img2': 'cafeteria-floor-high-gloss-finish-massachusetts.jpg', 'w2': 900, 'h2': 1200,
+        'img2': 'office-carpet-before-after-lowell-ma.jpg', 'w2': 1136, 'h2': 1156,
         'serviceType': 'Carpet cleaning',
         'en': {
             'name': 'Carpet, Tile & Grout Cleaning',
