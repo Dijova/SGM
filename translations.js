@@ -196,7 +196,7 @@ window.SGM_TRANSLATIONS = {
             },
             messageLabel: 'Additional details',
             message: 'Additional details (city, size of the space, preferred dates…)',
-            consent: 'I agree that SGML Clean Solutions may store my information to respond to this quote request.',
+            consent: 'I agree that SGML Clean Solutions may store my information to respond to this quote request, as described in our <a href="privacy.html">privacy policy</a>.',
             submit: 'Submit Request',
             sending: 'Sending...',
             privacyNote: '🔒 Your information is sent over an encrypted connection and used only to answer your request. We will never ask for passwords, bank details or payments through email or this form.',
@@ -223,7 +223,8 @@ window.SGM_TRANSLATIONS = {
             address: 'Address:',
             links: 'Quick Links',
             follow: 'Follow Us',
-            rights: 'All rights reserved.'
+            rights: 'All rights reserved.',
+            privacy: 'Privacy Policy'
         }
     },
 
@@ -411,7 +412,7 @@ window.SGM_TRANSLATIONS = {
             },
             messageLabel: 'Detalles adicionales',
             message: 'Detalles adicionales (ciudad, tamaño del espacio, fechas preferidas…)',
-            consent: 'Acepto que SGML Clean Solutions almacene mis datos para responder a esta solicitud de cotización.',
+            consent: 'Acepto que SGML Clean Solutions almacene mis datos para responder a esta solicitud de cotización, según nuestra <a href="privacy.html">política de privacidad</a>.',
             submit: 'Enviar Solicitud',
             sending: 'Enviando...',
             privacyNote: '🔒 Tu información se envía por una conexión cifrada y se usa solo para responder a tu solicitud. Nunca te pediremos contraseñas, datos bancarios ni pagos por correo o por este formulario.',
@@ -438,7 +439,8 @@ window.SGM_TRANSLATIONS = {
             address: 'Dirección:',
             links: 'Enlaces Rápidos',
             follow: 'Síguenos',
-            rights: 'Todos los derechos reservados.'
+            rights: 'Todos los derechos reservados.',
+            privacy: 'Política de privacidad'
         }
     }
 };

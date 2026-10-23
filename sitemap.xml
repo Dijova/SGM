@@ -323,4 +323,10 @@
         <image:image><image:loc>https://sgmlcleansolutions.com/assets/carpet-cleaning-extraction-lowell-ma.jpg</image:loc></image:image>
         <image:image><image:loc>https://sgmlcleansolutions.com/assets/office-carpet-before-after-lowell-ma.jpg</image:loc></image:image>
     </url>
+    <url>
+        <loc>https://sgmlcleansolutions.com/privacy.html</loc>
+        <lastmod>2026-10-23</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>
