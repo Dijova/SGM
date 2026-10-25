@@ -80,11 +80,25 @@
         });
     }
 
-    function apply(lang) {
+    function apply(lang, initial) {
         if (!SUPPORTED.includes(lang) || !TRANSLATIONS[lang]) lang = DEFAULT;
         current = lang;
         document.documentElement.lang = lang;
 
+        // The HTML is written in English: on the first load in English there is
+        // nothing to rewrite, which saves work on slow phones.
+        if (!(initial && lang === DEFAULT)) translateDom();
+
+        updateUrlState(lang);
+
+        document.querySelectorAll('.lang-switch [data-lang]').forEach(btn => {
+            btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
+        });
+
+        listeners.forEach(fn => fn(lang));
+    }
+
+    function translateDom() {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             el.textContent = t(el.dataset.i18n);
         });
@@ -104,14 +118,6 @@
         document.querySelectorAll('[data-i18n-content]').forEach(el => {
             el.setAttribute('content', t(el.dataset.i18nContent));
         });
-
-        updateUrlState(lang);
-
-        document.querySelectorAll('.lang-switch [data-lang]').forEach(btn => {
-            btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
-        });
-
-        listeners.forEach(fn => fn(lang));
     }
 
     function initialLanguage() {
@@ -138,7 +144,7 @@
         });
         // Page scripts register their listeners on DOMContentLoaded too; apply
         // the language right after them.
-        setTimeout(() => apply(initialLanguage()), 0);
+        setTimeout(() => apply(initialLanguage(), true), 0);
 
         const yearEl = document.getElementById('current-year');
         if (yearEl) yearEl.textContent = String(new Date().getFullYear());

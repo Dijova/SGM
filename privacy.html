@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://*.tawk.to https://cdn.jsdelivr.net;
-        style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com;
-        font-src 'self' https://*.tawk.to https://fonts.gstatic.com;
-        img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com https://*.tawk.to https://cdn.jsdelivr.net https://tawk.link https://s3.amazonaws.com;
-        media-src 'self' https://*.tawk.to;
-        connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.tawk.to wss://*.tawk.to;
-        frame-src https://*.tawk.to;
+        script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com https://cdn.jsdelivr.net;
+        media-src 'self';
+        connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com;
+        frame-src 'none';
         form-action 'self';
         base-uri 'self';
         object-src 'none';
@@ -26,20 +26,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_32x32.png">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
-    <script src="analytics.js" defer></script>
-    <script src="config.js" defer></script>
-    <script src="translations.js" defer></script>
-    <script src="i18n.js" defer></script>
-    <script src="menu.js" defer></script>
-    <script src="tawk.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261025">
+    <script src="analytics.js?v=20261025" defer></script>
+    <script src="config.js?v=20261025" defer></script>
+    <script src="translations.js?v=20261025" defer></script>
+    <script src="i18n.js?v=20261025" defer></script>
+    <script src="menu.js?v=20261025" defer></script>
 </head>
 <body class="dark-theme service-page">
     <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
     <header>
         <div class="container">
             <a href="./" class="brand" data-lang-link aria-label="SGML Clean Solutions - Home">
-                <img src="assets/sgml-clean-solutions-logo.png" alt="SGML Clean Solutions logo" width="75" height="50">
+                <img src="assets/sgml-clean-solutions-logo.webp" alt="SGML Clean Solutions logo" width="75" height="50">
                 <span class="brand-name">SGML <span>Clean Solutions</span></span>
             </a>
             <nav aria-label="Main">
@@ -67,14 +66,13 @@
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="./" data-i18n="nav.home" data-lang-link>Home</a> › <span data-i18n="footer.privacy">Privacy Policy</span></nav>
 
             <h1>Privacy Policy</h1>
-            <p class="legal-updated"><em>Last updated: October 23, 2026</em> · <a href="#es" lang="es">Leer en español</a></p>
+            <p class="legal-updated"><em>Last updated: October 25, 2026</em> · <a href="#es" lang="es">Leer en español</a></p>
             <p>SGML Clean Solutions ("we", "us"), 86 Agawam St, Lowell, MA, respects your privacy. This policy explains what information we collect through sgmlcleansolutions.com and how we use and protect it.</p>
 
             <h2>Information we collect</h2>
             <ul>
                 <li>The data you enter in the quote form: name, email, phone (optional), service requested, message and your consent.</li>
                 <li>The language you were browsing in and the date and time of the request.</li>
-                <li>Messages you send through the website chat.</li>
                 <li>Basic technical data your browser sends automatically, such as the pages you visit.</li>
             </ul>
 
@@ -86,7 +84,7 @@
                 <li>Information travels over encrypted HTTPS connections.</li>
                 <li>Quote requests are stored in a private, access-restricted Google account and we receive an email alert for each new request. We never send automatic emails to the address you enter.</li>
                 <li>The form checks every field and blocks links, code and spam.</li>
-                <li>We will <strong>never</strong> ask you for passwords, bank details or payments by email, chat or through this form.</li>
+                <li>We will <strong>never</strong> ask you for passwords, bank details or payments by email, text message or through this form.</li>
             </ul>
 
             <h2>Retention and your rights</h2>
@@ -95,7 +93,6 @@
             <h2>Third-party services</h2>
             <ul>
                 <li><strong>Google Analytics</strong> measures anonymous visit statistics, with IP addresses anonymized.</li>
-                <li><strong>Tawk.to</strong> provides the website chat.</li>
                 <li><strong>Google Maps</strong> shows our location, and our Google reviews are shown on the home page.</li>
                 <li>Links to Facebook, Instagram and Google open those platforms, which have their own privacy policies.</li>
             </ul>
@@ -108,14 +105,31 @@
 
             <div lang="es" id="es">
                 <h2 class="legal-es-title">Política de privacidad</h2>
-                <p class="legal-updated"><em>Última actualización: 23 de octubre de 2026</em></p>
-                <p>SGML Clean Solutions, 86 Agawam St, Lowell, MA, respeta su privacidad. Solo usamos los datos que envía en el formulario de cotización (nombre, correo, teléfono opcional, servicio, mensaje y su consentimiento), el idioma en que navegaba y los mensajes del chat del sitio para responder su solicitud, preparar una cotización y prestar nuestros servicios. Nunca vendemos, alquilamos ni compartimos su información con fines publicitarios.</p>
-                <p>Los datos viajan cifrados (HTTPS) y se guardan en una cuenta privada de Google con acceso restringido; recibimos un aviso por correo de cada solicitud y nunca enviamos correos automáticos a la dirección que usted escribe. El formulario revisa cada campo y bloquea enlaces, código y spam. <strong>Nunca</strong> le pediremos contraseñas, datos bancarios ni pagos por correo, chat o mediante este formulario.</p>
-                <p>Usamos Google Analytics para medir estadísticas anónimas de visitas (con la IP anonimizada), Tawk.to para el chat, y Google Maps y las reseñas de Google en la página principal. Los enlaces a Facebook, Instagram y Google abren esas plataformas, que tienen sus propias políticas de privacidad. Este sitio no está dirigido a menores de 13 años.</p>
+                <p class="legal-updated"><em>Última actualización: 25 de octubre de 2026</em></p>
+                <p>SGML Clean Solutions, 86 Agawam St, Lowell, MA, respeta su privacidad. Solo usamos los datos que envía en el formulario de cotización (nombre, correo, teléfono opcional, servicio, mensaje y su consentimiento) y el idioma en que navegaba para responder su solicitud, preparar una cotización y prestar nuestros servicios. Nunca vendemos, alquilamos ni compartimos su información con fines publicitarios.</p>
+                <p>Los datos viajan cifrados (HTTPS) y se guardan en una cuenta privada de Google con acceso restringido; recibimos un aviso por correo de cada solicitud y nunca enviamos correos automáticos a la dirección que usted escribe. El formulario revisa cada campo y bloquea enlaces, código y spam. <strong>Nunca</strong> le pediremos contraseñas, datos bancarios ni pagos por correo, mensaje de texto o mediante este formulario.</p>
+                <p>Usamos Google Analytics para medir estadísticas anónimas de visitas (con la IP anonimizada), y Google Maps y las reseñas de Google en la página principal. Los enlaces a Facebook, Instagram y Google abren esas plataformas, que tienen sus propias políticas de privacidad. Este sitio no está dirigido a menores de 13 años.</p>
                 <p>Conservamos las solicitudes solo el tiempo necesario para atenderle. Puede pedir acceso, corrección o eliminación de sus datos escribiendo a <a href="mailto:info@sgmlcleansolutions.com">info@sgmlcleansolutions.com</a> o llamando al <a href="tel:+19542451566">+1 (954) 245-1566</a>.</p>
             </div>
         </div>
     </main>
+
+    <!-- Floating contact button: opens "Call us" / "Text us" -->
+    <div class="contact-fab">
+        <div class="fab-menu" id="fab-menu" hidden>
+            <a href="tel:+19542451566" class="fab-option">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+                <span data-i18n="contact.call">Call us</span>
+            </a>
+            <a href="sms:+19542451566" class="fab-option">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+                <span data-i18n="contact.sms">Text us</span>
+            </a>
+        </div>
+        <button type="button" class="fab-btn" id="fab-toggle" aria-expanded="false" aria-controls="fab-menu" aria-label="Contact us: call or text" data-i18n-aria-label="contact.open">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+        </button>
+    </div>
 
     <footer>
         <div class="container">

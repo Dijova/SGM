@@ -53,11 +53,22 @@ document.addEventListener('DOMContentLoaded', function () {
         track.scrollTo({ left: list[target].offsetLeft - list[0].offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
     }
 
+    // Dots are redrawn at most once per frame, measuring the layout before
+    // touching the DOM so the browser never has to recalculate it twice.
+    let dotsFrame = 0;
     function renderDots() {
-        dotsEl.textContent = '';
+        if (dotsFrame) return;
+        dotsFrame = requestAnimationFrame(() => {
+            dotsFrame = 0;
+            drawDots();
+        });
+    }
+
+    function drawDots() {
         const pages = pageCount();
         const active = Math.min(currentIndex(), pages - 1);
         const showControls = pages > 1;
+        dotsEl.textContent = '';
         dotsEl.hidden = !showControls;
         prevBtn.hidden = !showControls;
         nextBtn.hidden = !showControls;
@@ -229,13 +240,29 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(() => { /* keep the fallback testimonials */ });
     }
 
+    // Google reviews are requested only when the section is about to be seen.
     let lastLang = null;
-    I18N.onChange(lang => {
-        renderDots();
-        if (lang !== lastLang) {
+    let nearViewport = !('IntersectionObserver' in window);
+    function maybeLoad() {
+        const lang = I18N.current();
+        if (nearViewport && lang !== lastLang) {
             lastLang = lang;
             loadGoogleReviews(lang);
         }
+    }
+    if (!nearViewport) {
+        const observer = new IntersectionObserver(entries => {
+            if (entries.some(e => e.isIntersecting)) {
+                nearViewport = true;
+                observer.disconnect();
+                maybeLoad();
+            }
+        }, { rootMargin: '600px 0px' });
+        observer.observe(carousel);
+    }
+    I18N.onChange(() => {
+        renderDots();
+        maybeLoad();
     });
 
     renderDots();

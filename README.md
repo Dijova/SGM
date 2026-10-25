@@ -25,7 +25,7 @@ Static website for **SGML Clean Solutions** (cleaning, floor care and snow remov
 | `i18n.js` | Shared language switching (URL, canonical, internal links). |
 | `config.js` | Form endpoint URL and optional Cloudflare Turnstile site key. |
 | `script.js` | Home page: menu, quote form validation/submission, UI behaviour. |
-| `analytics.js` / `tawk.js` | Google Analytics and Tawk.to chat loaders. |
+| `analytics.js` | Google Analytics loader (deferred until the page has loaded). |
 | `styles.css` | Home page styles. |
 | `sitemap.xml`, `robots.txt`, `site.webmanifest`, `404.html` | SEO / site files. |
 | `backend/google-apps-script/Code.gs` | Secure form backend (paste into Apps Script). |

@@ -35,4 +35,24 @@ document.addEventListener('DOMContentLoaded', function () {
             menuToggle.focus();
         }
     });
+
+    // Floating contact button: shows the "Call us" / "Text us" options.
+    const fabToggle = document.getElementById('fab-toggle');
+    const fabMenu = document.getElementById('fab-menu');
+    if (fabToggle && fabMenu) {
+        const setFabOpen = open => {
+            fabMenu.hidden = !open;
+            fabToggle.setAttribute('aria-expanded', String(open));
+        };
+        fabToggle.addEventListener('click', () => setFabOpen(fabMenu.hidden));
+        document.addEventListener('click', event => {
+            if (!fabToggle.contains(event.target) && !fabMenu.contains(event.target)) setFabOpen(false);
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && !fabMenu.hidden) {
+                setFabOpen(false);
+                fabToggle.focus();
+            }
+        });
+    }
 });

@@ -18,6 +18,11 @@ window.SGM_TRANSLATIONS = {
             description: 'Floor stripping & waxing, buffing, burnishing, deep scrub & recoat, carpet and tile care in Lowell, Massachusetts and New Hampshire, plus commercial and residential cleaning, junk removal and snow removal. Free quote.',
             ogDescription: 'Floor care specialists in Lowell, MA: stripping & waxing, burnishing, carpet and tile care, plus complete cleaning. Free quote.'
         },
+        contact: {
+            open: 'Contact us: call or text',
+            call: 'Call us',
+            sms: 'Text us'
+        },
         common: {
             skip: 'Skip to content',
             menu: 'Open menu',
@@ -233,6 +238,11 @@ window.SGM_TRANSLATIONS = {
             title: 'Cuidado de Pisos y Limpieza en Lowell, MA | SGML Clean Solutions',
             description: 'Decapado y encerado, pulido, abrillantado, fregado profundo y recapa, alfombras y cerámica en Lowell, Massachusetts y New Hampshire, además de limpieza comercial y residencial, retiro de escombros y remoción de nieve. Cotización gratis.',
             ogDescription: 'Especialistas en pisos en Lowell, MA: decapado y encerado, abrillantado, alfombras y cerámica, y limpieza completa. Cotización gratis.'
+        },
+        contact: {
+            open: 'Contáctanos: llamada o mensaje de texto',
+            call: 'Llámanos',
+            sms: 'Envíanos un texto'
         },
         common: {
             skip: 'Saltar al contenido',

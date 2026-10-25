@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--
         Content Security Policy: only allows scripts/connections from this site,
-        the quote-form backend (Google Apps Script), Google Analytics, the Tawk.to
-        chat widget and the optional Cloudflare Turnstile anti-bot check.
+        the quote-form backend (Google Apps Script), Google Analytics, the Google
+        Maps embed and the optional Cloudflare Turnstile anti-bot check.
     -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
-        script-src 'self' https://www.googletagmanager.com https://*.tawk.to https://cdn.jsdelivr.net https://challenges.cloudflare.com;
-        style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com;
-        font-src 'self' https://*.tawk.to https://fonts.gstatic.com;
-        img-src 'self' data: https://*.googleusercontent.com https://www.googletagmanager.com https://*.google-analytics.com https://*.tawk.to https://cdn.jsdelivr.net https://tawk.link https://s3.amazonaws.com;
-        media-src 'self' https://*.tawk.to;
-        connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.tawk.to wss://*.tawk.to;
-        frame-src https://*.tawk.to https://challenges.cloudflare.com https://www.google.com https://maps.google.com;
+        script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net https://challenges.cloudflare.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https://*.googleusercontent.com https://www.googletagmanager.com https://*.google-analytics.com https://cdn.jsdelivr.net;
+        media-src 'self';
+        connect-src 'self' https://script.google.com https://script.googleusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com;
+        frame-src https://challenges.cloudflare.com https://www.google.com https://maps.google.com;
         form-action 'self';
         base-uri 'self';
         object-src 'none';
@@ -138,16 +138,15 @@
     }
     </script>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="assets/hero-poster.jpg" as="image">
-    <script src="analytics.js" defer></script>
-    <script src="config.js" defer></script>
-    <script src="translations.js" defer></script>
-    <script src="i18n.js" defer></script>
-    <script src="menu.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="reviews.js" defer></script>
-    <script src="tawk.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261025">
+    <link rel="preload" href="assets/hero-poster.webp" as="image" type="image/webp" fetchpriority="high">
+    <script src="analytics.js?v=20261025" defer></script>
+    <script src="config.js?v=20261025" defer></script>
+    <script src="translations.js?v=20261025" defer></script>
+    <script src="i18n.js?v=20261025" defer></script>
+    <script src="menu.js?v=20261025" defer></script>
+    <script src="script.js?v=20261025" defer></script>
+    <script src="reviews.js?v=20261025" defer></script>
 </head>
 
 <body class="dark-theme">
@@ -155,7 +154,7 @@
     <header>
         <div class="container">
             <a href="#home" class="brand" aria-label="SGML Clean Solutions - Home">
-                <img src="assets/sgml-clean-solutions-logo.png" alt="SGML Clean Solutions logo" width="75" height="50">
+                <img src="assets/sgml-clean-solutions-logo.webp" alt="SGML Clean Solutions logo" width="75" height="50">
                 <span class="brand-name">SGML <span>Clean Solutions</span></span>
             </a>
 
@@ -187,9 +186,8 @@
     <main id="main">
         <section id="home" class="hero">
             <div class="hero-media">
-                <video autoplay muted loop playsinline preload="metadata" class="hero-video" poster="assets/hero-poster.jpg" aria-hidden="true">
-                    <source src="assets/banner.mp4" type="video/mp4">
-                </video>
+                <!-- The poster is the first thing painted; script.js attaches the video after the page has loaded. -->
+                <video muted loop playsinline preload="none" class="hero-video" poster="assets/hero-poster.webp" data-src="assets/banner.mp4" aria-hidden="true"></video>
             </div>
             <div class="container hero-overlay">
                 <p class="eyebrow" data-i18n="hero.eyebrow">Floor care specialists · Lowell, MA</p>
@@ -211,7 +209,7 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-image">
-                        <img src="assets/floor-care-burnishing-lowell-ma.jpg" alt="SGML Clean Solutions technician burnishing a glossy commercial floor in Lowell, MA" data-i18n-alt="about.imageAlt" width="900" height="1115" loading="lazy" decoding="async">
+                        <img src="assets/floor-care-burnishing-lowell-ma.jpg" srcset="assets/floor-care-burnishing-lowell-ma-600.jpg 600w, assets/floor-care-burnishing-lowell-ma.jpg 900w" sizes="(max-width: 900px) min(520px, 100vw), 45vw" alt="SGML Clean Solutions technician burnishing a glossy commercial floor in Lowell, MA" data-i18n-alt="about.imageAlt" width="900" height="1115" loading="lazy" decoding="async">
                     </div>
                     <div class="about-text">
                         <h2 id="about-title" data-i18n="about.title">About SGML Clean Solutions</h2>
@@ -430,6 +428,23 @@
             </div>
         </section>
     </main>
+
+    <!-- Floating contact button: opens "Call us" / "Text us" -->
+    <div class="contact-fab">
+        <div class="fab-menu" id="fab-menu" hidden>
+            <a href="tel:+19542451566" class="fab-option">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+                <span data-i18n="contact.call">Call us</span>
+            </a>
+            <a href="sms:+19542451566" class="fab-option">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+                <span data-i18n="contact.sms">Text us</span>
+            </a>
+        </div>
+        <button type="button" class="fab-btn" id="fab-toggle" aria-expanded="false" aria-controls="fab-menu" aria-label="Contact us: call or text" data-i18n-aria-label="contact.open">
+            <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2zm3 6.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+        </button>
+    </div>
 
     <footer>
         <div class="container">

@@ -1147,7 +1147,7 @@ a.review-author:hover,
 
 /* Hero: video always fills the screen without distortion */
 #home.hero { height: auto; min-height: 100vh; min-height: 100svh; padding: 110px 0 60px; isolation: isolate; }
-.hero-media { position: absolute; inset: 0; z-index: -1; background: #111 url("assets/hero-poster.jpg") center / cover no-repeat; }
+.hero-media { position: absolute; inset: 0; z-index: -1; background: #111 url("assets/hero-poster.webp") center / cover no-repeat; }
 .hero-media .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 0; filter: brightness(.45); }
 .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)); max-width: 920px; padding: clamp(24px, 4vw, 48px); }
 #home h1 { font-size: clamp(2rem, 4.6vw, 3.6rem); line-height: 1.15; margin-bottom: 18px; }
@@ -1386,3 +1386,14 @@ button.work-item { width: 100%; padding: 0; border: 0; background: none; cursor:
 .legal-updated { color: #aaa; }
 .legal-divider { border: 0; border-top: 1px solid #444; margin: 48px 0 8px; }
 .consent-field a { color: var(--green); }
+
+/* Floating contact button: opens "Call us" / "Text us" */
+.contact-fab { position: fixed; right: 16px; bottom: 16px; z-index: 950; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.fab-btn { width: 58px; height: 58px; border: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--green); color: #fff; cursor: pointer; box-shadow: 0 6px 18px rgba(0,0,0,.45); transition: transform .2s ease; }
+.fab-btn:hover, .fab-btn:focus-visible { transform: scale(1.08); }
+.fab-btn[aria-expanded="true"] { background: #75a928; }
+.fab-menu { display: flex; flex-direction: column; gap: 8px; }
+.fab-menu[hidden] { display: none; }
+.fab-option { display: flex; align-items: center; gap: 10px; background: #fff; color: #232323; font-weight: 700; text-decoration: none; padding: 11px 18px; border-radius: 999px; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+.fab-option svg { color: var(--green); }
+.fab-option:hover { background: #f1f8e6; }

@@ -11,6 +11,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     /* ------------------------------------------------------------------
+     * Hero video: attached once the page has loaded, so the poster image is
+     * the first paint and the video does not slow down the initial load.
+     * Skipped when the visitor prefers reduced motion or saves data.
+     * ------------------------------------------------------------------ */
+    const heroVideo = document.querySelector('.hero-video[data-src]');
+    if (heroVideo) {
+        const saveData = navigator.connection && navigator.connection.saveData;
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const startVideo = () => {
+            heroVideo.src = heroVideo.dataset.src;
+            heroVideo.autoplay = true;
+            const playing = heroVideo.play();
+            if (playing && playing.catch) playing.catch(() => { /* autoplay blocked: poster stays */ });
+        };
+        if (!saveData && !reduceMotion) {
+            if (document.readyState === 'complete') setTimeout(startVideo, 300);
+            else window.addEventListener('load', () => setTimeout(startVideo, 300));
+        }
+    }
+
+    /* ------------------------------------------------------------------
      * Quote form: validation
      * ------------------------------------------------------------------ */
     const quoteForm = document.getElementById('quote-form');
@@ -319,17 +340,4 @@ document.addEventListener('DOMContentLoaded', function () {
         header.style.transform = (scrollTop > lastScrollTop && scrollTop > 200) ? 'translateY(-100%)' : 'translateY(0)';
         lastScrollTop = scrollTop;
     }, { passive: true });
-
-    /* ------------------------------------------------------------------
-     * Hero video fallback
-     * ------------------------------------------------------------------ */
-    const heroVideo = document.querySelector('.hero-video');
-    if (heroVideo) {
-        heroVideo.addEventListener('error', function () {
-            const hero = document.querySelector('#home');
-            hero.style.backgroundImage = 'url("assets/hero-poster.jpg")';
-            hero.style.backgroundSize = 'cover';
-            hero.style.backgroundPosition = 'center';
-        }, true);
-    }
 });
